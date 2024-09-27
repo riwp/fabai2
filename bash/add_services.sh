@@ -6,7 +6,6 @@ services=("fabai_aiwebui.service" "fabai_get_ai_insights.service")
 # Loop through each service
 for service in "${services[@]}"; do
   echo "Copying $service to /etc/systemd/system/..."
-  sudo cp "$service" /etc/systemd/system/
   
   if [ $? -eq 0 ]; then
     echo "$service copied successfully."
@@ -18,4 +17,4 @@ done
 echo "Reloading systemd daemon..."
 sudo systemctl daemon-reload
 
-echo "Done."
+echo "Done.  Make sure to change user name before starting service"
