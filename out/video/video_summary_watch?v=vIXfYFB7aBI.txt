@@ -1,0 +1,21 @@
+ONE SENTENCE SUMMARY: This podcast discusses the emergence of spatial intelligence and its potential to revolutionize various fields, including gaming, AR/VR, and robotics.
+
+MAIN POINTS:
+1. Spatial intelligence focuses on enabling machines to perceive, reason, and act in 3D space and time.
+2. It builds upon decades of research in 3D computer vision, reconstruction, and generative modeling.
+3. Advancements in compute power and algorithms like Nerf have unlocked new possibilities in spatial intelligence.
+4. Spatial intelligence complements language models by providing a fundamental 3D representation of the world.
+5. Potential use cases include world generation, augmented reality, robotics, and new forms of media.
+6. World Labs is a deep tech company focused on developing and deploying spatial intelligence models.
+7. The founding team comprises leading experts in AI, computer graphics, and systems engineering.
+8. They believe spatial intelligence is a fundamental problem with vast and unforeseen applications.
+9. The development of spatial intelligence requires a diverse range of talent and expertise.
+10. The company aims to create a platform that enables the realization of spatial intelligence's full potential.
+
+TAKEAWAYS:
+1. Spatial intelligence is an emerging field with the potential to revolutionize how machines interact with the world.
+2. The combination of 3D representation, generative modeling, and advancements in compute power is driving progress.
+3. Spatial intelligence complements language models by providing a crucial understanding of the physical world.
+4. World Labs is a company to watch, with its ambitious vision and team of experts.
+5. The potential applications of spatial intelligence are vast and likely to expand as the technology evolves. 
+
