@@ -3,6 +3,20 @@ import requests
 import logging
 import os
 
+#code to get static text file and returns as stub for testing purposes
+from common.fabai_get_static_debug_data import *
+
+
+#for UI troubleshooting.  Return static response as if you called fabric ai
+DEBUG_STATIC_FABRIC_RESPONSE = True
+
+
+# Get the current directory
+current_directory = os.path.dirname(os.path.abspath(__file__))
+
+#location for static content when in debug mode to avoid hitting AI server
+DEBUG_STATIC_FABRIC_FILE = os.path.join(current_directory, '..', 'static', 'fabai_fabric_static_response_to_webui_for_test.txt')
+
 # Allow toggle on/off debugging from IDE
 DEBUG_CODE = False
 if DEBUG_CODE:
@@ -23,6 +37,8 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Set the log path to go up one directory and then to the log folder
 LOG_PATH = os.path.join(current_directory, '..', 'log', 'fabric_ai_webui.log')
+#LOG_PATH = "/home/cmollo/fabai/log/fabric_ai_webui.log"
+
 
 # Setup logging to log to a file
 logging.basicConfig(
@@ -65,8 +81,13 @@ def submit():
     app.logger.info(f"Sending payload to API: {payload}")
 
     try:
-        response = requests.post(FABRIC_AI_API_URL, json=payload)
-        response.raise_for_status()
+        if DEBUG_STATIC_FABRIC_RESPONSE:
+            response = get_static_debug_data(DEBUG_STATIC_FABRIC_FILE)
+            app.logger.info(f"Using Fabric Static data {DEBUG_STATIC_FABRIC_FILE}")
+        else:
+            response = requests.post(FABRIC_AI_API_URL, json=payload)
+            response.raise_for_status()
+            
         data = response.json()
 
         output_data = data.get('output', 'No output received.')

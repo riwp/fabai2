@@ -8,11 +8,11 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 
 # Example static debug function
-def get_static_debug_data():
-    app.logger.info(f"get_static_debug_data - DEBUG_STATIC_FILE: {DEBUG_STATIC_FILE}")
+def get_static_debug_data(DEBUG_FILE_PATH):
+    app.logger.info(f"get_static_debug_data - DEBUG_FILE_PATH: {DEBUG_FILE_PATH}")
     try:
         # Load the response from a plain text file
-        with open(DEBUG_STATIC_FILE, 'r') as file:
+        with open(DEBUG_FILE_PATH, 'r') as file:
             response = file.read()  # Read file as plain text
         return response
         

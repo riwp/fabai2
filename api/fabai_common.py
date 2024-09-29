@@ -6,7 +6,7 @@ import os
 import subprocess
 
 #allow toggle on/off debugging from IDE
-DEBUG_CODE = False
+DEBUG_CODE = True
 if DEBUG_CODE:
     DEBUG_PORT = 5678
     import debugpy
@@ -37,7 +37,8 @@ OUTPUT_DIR_VIDEO = os.path.join(current_directory, '..', 'out', 'video')
 os.makedirs(OUTPUT_DIR_VIDEO, exist_ok=True)
 
 #location for static content when in debug mode to avoid hitting AI server
-DEBUG_STATIC_FILE = os.path.join(current_directory, '..', 'static', 'fabai_video_static_response.txt')
+DEBUG_STATIC_VIDEO_FILE = os.path.join(current_directory, '..', 'static', 'fabai_video_static_response.txt')
+
 
 # Setup logging to log to a file
 logging.basicConfig(

@@ -1,19 +1,15 @@
-2024-09-25 20:51:01,857 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-09-26 22:01:44,571 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5005
  * Running on http://192.168.23.10:5005
-2024-09-25 20:51:01,858 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:01:10,251 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:01:10,251 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:04:02,456 - INFO - rendering index.html
-2024-09-25 21:04:02,460 - INFO - 192.168.23.101 - - [25/Sep/2024 21:04:02] "GET / HTTP/1.1" 200 -
-2024-09-25 21:04:09,458 - INFO - starting submit
-2024-09-25 21:04:09,458 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfafds, debug=on
-2024-09-25 21:04:09,458 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfafds', 'debug': 'on'}
-2024-09-25 21:04:09,464 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
+2024-09-26 22:01:44,571 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-26 22:02:40,973 - INFO - rendering index.html
+2024-09-26 22:02:40,978 - INFO - 192.168.23.101 - - [26/Sep/2024 22:02:40] "GET / HTTP/1.1" 200 -
+2024-09-26 22:02:41,317 - INFO - 192.168.23.101 - - [26/Sep/2024 22:02:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-26 22:02:47,833 - INFO - starting submit
+2024-09-26 22:02:47,833 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfdsf, debug=on
+2024-09-26 22:02:47,833 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfdsf', 'debug': 'on'}
+2024-09-26 22:02:47,839 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
 
 MAIN POINTS:
 1. The tech industry is moving towards an industry of skills.
@@ -35,11 +31,23 @@ TAKEAWAYS:
 5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
 
 
-2024-09-25 21:04:09,466 - INFO - 192.168.23.101 - - [25/Sep/2024 21:04:09] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:04:10,782 - INFO - starting submit
-2024-09-25 21:04:10,782 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfafds, debug=on
-2024-09-25 21:04:10,783 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfafds', 'debug': 'on'}
-2024-09-25 21:04:10,787 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
+2024-09-26 22:02:47,840 - INFO - 192.168.23.101 - - [26/Sep/2024 22:02:47] "POST /submit HTTP/1.1" 200 -
+2024-09-27 07:34:23,789 - INFO - rendering index.html
+2024-09-27 07:34:23,789 - INFO - 192.168.23.104 - - [27/Sep/2024 07:34:23] "GET / HTTP/1.1" 200 -
+2024-09-27 07:34:32,693 - INFO - starting submit
+2024-09-27 07:34:32,693 - INFO - Received data: function=aiweb, operationtype=wisdom, url=https://www.businessinsider.com/hiring-picks-up-in-fall-low-openings-hurting-job-seekers-2024-9, debug=False
+2024-09-27 07:34:32,694 - INFO - Sending payload to API: {'function': 'aiweb', 'operationtype': 'wisdom', 'url': 'https://www.businessinsider.com/hiring-picks-up-in-fall-low-openings-hurting-job-seekers-2024-9', 'debug': False}
+2024-09-27 07:34:32,764 - ERROR - Error connecting to API: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5006/get_ai_insights
+2024-09-27 07:34:32,764 - INFO - 192.168.23.104 - - [27/Sep/2024 07:34:32] "[35m[1mPOST /submit HTTP/1.1[0m" 500 -
+2024-09-27 07:34:37,410 - INFO - starting submit
+2024-09-27 07:34:37,410 - INFO - Received data: function=aiweb, operationtype=wisdom, url=https://www.businessinsider.com/hiring-picks-up-in-fall-low-openings-hurting-job-seekers-2024-9, debug=False
+2024-09-27 07:34:37,410 - INFO - Sending payload to API: {'function': 'aiweb', 'operationtype': 'wisdom', 'url': 'https://www.businessinsider.com/hiring-picks-up-in-fall-low-openings-hurting-job-seekers-2024-9', 'debug': False}
+2024-09-27 07:34:37,477 - ERROR - Error connecting to API: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5006/get_ai_insights
+2024-09-27 07:34:37,477 - INFO - 192.168.23.104 - - [27/Sep/2024 07:34:37] "[35m[1mPOST /submit HTTP/1.1[0m" 500 -
+2024-09-27 07:34:58,301 - INFO - starting submit
+2024-09-27 07:34:58,303 - INFO - Received data: function=aiweb, operationtype=wisdom, url=https://www.businessinsider.com/hiring-picks-up-in-fall-low-openings-hurting-job-seekers-2024-9, debug=on
+2024-09-27 07:34:58,303 - INFO - Sending payload to API: {'function': 'aiweb', 'operationtype': 'wisdom', 'url': 'https://www.businessinsider.com/hiring-picks-up-in-fall-low-openings-hurting-job-seekers-2024-9', 'debug': 'on'}
+2024-09-27 07:34:58,307 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
 
 MAIN POINTS:
 1. The tech industry is moving towards an industry of skills.
@@ -61,1325 +69,365 @@ TAKEAWAYS:
 5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
 
 
-2024-09-25 21:04:10,788 - INFO - 192.168.23.101 - - [25/Sep/2024 21:04:10] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:04:29,494 - INFO - starting submit
-2024-09-25 21:04:29,494 - INFO - Received data: function=aivideo, operationtype=summary, url=https://youtu.be/jM_jdsx5yFc, debug=False
-2024-09-25 21:04:29,494 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'summary', 'url': 'https://youtu.be/jM_jdsx5yFc', 'debug': False}
-2024-09-25 21:04:42,801 - INFO - API response: ONE SENTENCE SUMMARY: This video is about the release of new Cura 5.0 profiles, including a hyper fast profile for quick, functional prints.
-
-MAIN POINTS:
-1. The creator is releasing Cura 5.0 profiles, including a hyper fast profile.
-2. The hyper fast profile is for quick, easy, and functional prints.
-3. The best profile is for high quality prints, but takes longer.
-4. The good profile has a 0.2 layer height and balances quality and speed.
-5. The extra fast profile has been improved to fix gaps in the top surface.
-6. The hyper fast profile is even faster than the extra fast profile.
-7. The hyper fast profile sacrifices some quality for speed.
-8. The hyper fast profile is great for functional prints that don't need to look pretty.
-9. The creator is releasing the hyper fast profile as a beta.
-10. The creator now has high, medium, fast, and hyper fast profiles for Cura 5.0.
-
-TAKEAWAYS:
-1. The new Cura 5.0 profiles offer a range of options for print speed and quality.
-2. The hyper fast profile is a great option for quick, functional prints.
-3. The extra fast profile has been improved to fix gaps in the top surface.
-4. The creator is still experimenting with the hyper fast profile and welcomes feedback.
-5. The creator encourages viewers to support the channel on Patreon and subscribe. 
-
-
-2024-09-25 21:04:42,802 - INFO - 192.168.23.101 - - [25/Sep/2024 21:04:42] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:05:08,299 - INFO - starting submit
-2024-09-25 21:05:08,299 - INFO - Received data: function=aiweb, operationtype=summary, url=https://www.cnbc.com/2024/09/25/american-eagle-sues-amazon-over-trademark-infringement-of-aerie-line.html, debug=False
-2024-09-25 21:05:08,299 - INFO - Sending payload to API: {'function': 'aiweb', 'operationtype': 'summary', 'url': 'https://www.cnbc.com/2024/09/25/american-eagle-sues-amazon-over-trademark-infringement-of-aerie-line.html', 'debug': False}
-2024-09-25 21:05:19,051 - INFO - API response: ## ONE SENTENCE SUMMARY:
-
-American Eagle Outfitters sues Amazon for trademark infringement, alleging the platform facilitated the sale of counterfeit Aerie products. 
-
-## MAIN POINTS:
-
-1. American Eagle claims Amazon used Aerie branding to mislead customers into buying knockoffs.
-2. The lawsuit alleges Amazon profited by driving traffic to counterfeit products using Aerie's name.
-3. American Eagle asserts it declined to sell Aerie products directly on Amazon to protect its brand.
-4. The complaint states Amazon continued to display infringing products even after being notified.
-5. Amazon has faced previous complaints and lawsuits from brands regarding counterfeit products.
-6. Birkenstock pulled its products from Amazon in 2016 due to a surge in counterfeit items.
-7. Daimler AG sued Amazon in 2016 over knock-off Mercedes-Benz wheels sold by a third-party seller.
-8. Amazon acknowledges the risk of counterfeit goods from third-party sellers in its financial filings.
-9. Amazon claims to prohibit counterfeit sales and has implemented measures to combat the issue.
-10. American Eagle seeks an injunction, stopping Amazon from this practice, and financial damages. 
-
-## TAKEAWAYS:
-
-1. This lawsuit highlights the ongoing battle against counterfeit goods on e-commerce platforms.
-2. Brands are increasingly vigilant in protecting their trademarks and brand reputation online.
-3. Amazon's third-party marketplace, while beneficial for growth, presents challenges in controlling counterfeit products. 
-4. Consumers should be cautious when purchasing branded products online, especially from third-party sellers.
-5. This case could set a precedent for how e-commerce platforms are held accountable for trademark infringement by third-party sellers. 
-
-
-2024-09-25 21:05:19,052 - INFO - 192.168.23.101 - - [25/Sep/2024 21:05:19] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:08:55,743 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:08:55,743 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:09:07,365 - INFO - rendering index.html
-2024-09-25 21:09:07,370 - INFO - 192.168.23.101 - - [25/Sep/2024 21:09:07] "GET / HTTP/1.1" 200 -
-2024-09-25 21:09:15,896 - INFO - starting submit
-2024-09-25 21:09:15,896 - INFO - Received data: function=aivideo, operationtype=wisdom, url=adsfa, debug=on
-2024-09-25 21:09:15,896 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'adsfa', 'debug': 'on'}
-2024-09-25 21:09:15,902 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:09:15,904 - INFO - 192.168.23.101 - - [25/Sep/2024 21:09:15] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:12:04,600 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:12:04,600 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:12:17,552 - INFO - rendering index.html
-2024-09-25 21:12:17,557 - INFO - 192.168.23.101 - - [25/Sep/2024 21:12:17] "GET / HTTP/1.1" 200 -
-2024-09-25 21:12:26,154 - INFO - starting submit
-2024-09-25 21:12:26,155 - INFO - Received data: function=aivideo, operationtype=wisdom, url=adsfafds, debug=on
-2024-09-25 21:12:26,155 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'adsfafds', 'debug': 'on'}
-2024-09-25 21:12:26,160 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:12:26,163 - INFO - 192.168.23.101 - - [25/Sep/2024 21:12:26] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:13:44,589 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:13:44,589 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:13:53,558 - INFO - rendering index.html
-2024-09-25 21:13:53,562 - INFO - 192.168.23.101 - - [25/Sep/2024 21:13:53] "GET / HTTP/1.1" 200 -
-2024-09-25 21:13:57,217 - INFO - starting submit
-2024-09-25 21:13:57,217 - INFO - Received data: function=aivideo, operationtype=wisdom, url=adsfs, debug=on
-2024-09-25 21:13:57,217 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'adsfs', 'debug': 'on'}
-2024-09-25 21:13:57,223 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:13:57,225 - INFO - 192.168.23.101 - - [25/Sep/2024 21:13:57] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:14:00,418 - INFO - starting submit
-2024-09-25 21:14:00,418 - INFO - Received data: function=aivideo, operationtype=wisdom, url=adsfs, debug=on
-2024-09-25 21:14:00,418 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'adsfs', 'debug': 'on'}
-2024-09-25 21:14:00,423 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:14:00,423 - INFO - 192.168.23.101 - - [25/Sep/2024 21:14:00] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:15:43,180 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:15:43,181 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:15:50,191 - INFO - rendering index.html
-2024-09-25 21:15:50,195 - INFO - 192.168.23.101 - - [25/Sep/2024 21:15:50] "GET / HTTP/1.1" 200 -
-2024-09-25 21:15:56,689 - INFO - starting submit
-2024-09-25 21:15:56,689 - INFO - Received data: function=aivideo, operationtype=wisdom, url=sdfads, debug=on
-2024-09-25 21:15:56,689 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'sdfads', 'debug': 'on'}
-2024-09-25 21:15:56,695 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:15:56,697 - INFO - 192.168.23.101 - - [25/Sep/2024 21:15:56] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:17:50,578 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:17:50,578 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:17:59,052 - INFO - rendering index.html
-2024-09-25 21:17:59,056 - INFO - 192.168.23.101 - - [25/Sep/2024 21:17:59] "GET / HTTP/1.1" 200 -
-2024-09-25 21:18:00,808 - INFO - rendering index.html
-2024-09-25 21:18:00,809 - INFO - 192.168.23.101 - - [25/Sep/2024 21:18:00] "GET / HTTP/1.1" 200 -
-2024-09-25 21:18:02,371 - INFO - rendering index.html
-2024-09-25 21:18:02,371 - INFO - 192.168.23.101 - - [25/Sep/2024 21:18:02] "GET / HTTP/1.1" 200 -
-2024-09-25 21:18:12,111 - INFO - starting submit
-2024-09-25 21:18:12,111 - INFO - Received data: function=aivideo, operationtype=wisdom, url=dsafafads, debug=on
-2024-09-25 21:18:12,111 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'dsafafads', 'debug': 'on'}
-2024-09-25 21:18:12,117 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:18:12,119 - INFO - 192.168.23.101 - - [25/Sep/2024 21:18:12] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:18:28,789 - INFO - rendering index.html
-2024-09-25 21:18:28,789 - INFO - 192.168.23.101 - - [25/Sep/2024 21:18:28] "GET / HTTP/1.1" 200 -
-2024-09-25 21:19:37,698 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:19:37,698 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:19:44,313 - INFO - rendering index.html
-2024-09-25 21:19:44,318 - INFO - 192.168.23.101 - - [25/Sep/2024 21:19:44] "GET / HTTP/1.1" 200 -
-2024-09-25 21:19:46,485 - INFO - rendering index.html
-2024-09-25 21:19:46,486 - INFO - 192.168.23.101 - - [25/Sep/2024 21:19:46] "GET / HTTP/1.1" 200 -
-2024-09-25 21:19:53,258 - INFO - starting submit
-2024-09-25 21:19:53,258 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfds, debug=on
-2024-09-25 21:19:53,259 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfds', 'debug': 'on'}
-2024-09-25 21:19:53,264 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:19:53,266 - INFO - 192.168.23.101 - - [25/Sep/2024 21:19:53] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:20:20,538 - INFO - rendering index.html
-2024-09-25 21:20:20,539 - INFO - 192.168.23.101 - - [25/Sep/2024 21:20:20] "GET / HTTP/1.1" 200 -
-2024-09-25 21:20:28,012 - INFO - starting submit
-2024-09-25 21:20:28,012 - INFO - Received data: function=aivideo, operationtype=wisdom, url=sadfsafd, debug=on
-2024-09-25 21:20:28,012 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'sadfsafd', 'debug': 'on'}
-2024-09-25 21:20:28,017 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:20:28,017 - INFO - 192.168.23.101 - - [25/Sep/2024 21:20:28] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:20:40,113 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:20:40,113 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:20:45,936 - INFO - rendering index.html
-2024-09-25 21:20:45,941 - INFO - 192.168.23.101 - - [25/Sep/2024 21:20:45] "GET / HTTP/1.1" 200 -
-2024-09-25 21:20:56,569 - INFO - starting submit
-2024-09-25 21:20:56,570 - INFO - Received data: function=aivideo, operationtype=wisdom, url=sdfasdfa, debug=on
-2024-09-25 21:20:56,570 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'sdfasdfa', 'debug': 'on'}
-2024-09-25 21:20:56,575 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:20:56,578 - INFO - 192.168.23.101 - - [25/Sep/2024 21:20:56] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:22:05,881 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:22:05,881 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:22:11,181 - INFO - rendering index.html
-2024-09-25 21:22:11,185 - INFO - 192.168.23.101 - - [25/Sep/2024 21:22:11] "GET / HTTP/1.1" 200 -
-2024-09-25 21:22:15,261 - INFO - starting submit
-2024-09-25 21:22:15,261 - INFO - Received data: function=aivideo, operationtype=wisdom, url=dsafsadf, debug=on
-2024-09-25 21:22:15,262 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'dsafsadf', 'debug': 'on'}
-2024-09-25 21:22:15,267 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:22:15,269 - INFO - 192.168.23.101 - - [25/Sep/2024 21:22:15] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:22:17,212 - INFO - starting submit
-2024-09-25 21:22:17,212 - INFO - Received data: function=aivideo, operationtype=wisdom, url=dsafsadf, debug=on
-2024-09-25 21:22:17,212 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'dsafsadf', 'debug': 'on'}
-2024-09-25 21:22:17,216 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:22:17,217 - INFO - 192.168.23.101 - - [25/Sep/2024 21:22:17] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:23:23,985 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:23:23,985 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:23:30,539 - INFO - rendering index.html
-2024-09-25 21:23:30,543 - INFO - 192.168.23.101 - - [25/Sep/2024 21:23:30] "GET / HTTP/1.1" 200 -
-2024-09-25 21:23:36,054 - INFO - starting submit
-2024-09-25 21:23:36,055 - INFO - Received data: function=aivideo, operationtype=wisdom, url=dsfasf, debug=on
-2024-09-25 21:23:36,055 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'dsfasf', 'debug': 'on'}
-2024-09-25 21:23:36,060 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:23:36,062 - INFO - 192.168.23.101 - - [25/Sep/2024 21:23:36] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:24:19,195 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:24:19,195 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:24:23,722 - INFO - rendering index.html
-2024-09-25 21:24:23,726 - INFO - 192.168.23.101 - - [25/Sep/2024 21:24:23] "GET / HTTP/1.1" 200 -
-2024-09-25 21:24:29,814 - INFO - starting submit
-2024-09-25 21:24:29,814 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asfasdf, debug=on
-2024-09-25 21:24:29,814 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asfasdf', 'debug': 'on'}
-2024-09-25 21:24:29,820 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:24:29,822 - INFO - 192.168.23.101 - - [25/Sep/2024 21:24:29] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:24:31,438 - INFO - starting submit
-2024-09-25 21:24:31,438 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asfasdf, debug=on
-2024-09-25 21:24:31,438 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asfasdf', 'debug': 'on'}
-2024-09-25 21:24:31,442 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:24:31,443 - INFO - 192.168.23.101 - - [25/Sep/2024 21:24:31] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:25:51,970 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:25:51,970 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:26:04,364 - INFO - rendering index.html
-2024-09-25 21:26:04,369 - INFO - 192.168.23.101 - - [25/Sep/2024 21:26:04] "GET / HTTP/1.1" 200 -
-2024-09-25 21:26:07,454 - INFO - rendering index.html
-2024-09-25 21:26:07,454 - INFO - 192.168.23.101 - - [25/Sep/2024 21:26:07] "GET / HTTP/1.1" 200 -
-2024-09-25 21:26:15,900 - INFO - starting submit
-2024-09-25 21:26:15,901 - INFO - Received data: function=aivideo, operationtype=wisdom, url=dfasdfads, debug=on
-2024-09-25 21:26:15,901 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'dfasdfads', 'debug': 'on'}
-2024-09-25 21:26:15,906 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:26:15,908 - INFO - 192.168.23.101 - - [25/Sep/2024 21:26:15] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:28:36,226 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:28:36,226 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:28:47,637 - INFO - rendering index.html
-2024-09-25 21:28:47,641 - INFO - 192.168.23.101 - - [25/Sep/2024 21:28:47] "GET / HTTP/1.1" 200 -
-2024-09-25 21:28:55,398 - INFO - starting submit
-2024-09-25 21:28:55,399 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfasfdsa, debug=on
-2024-09-25 21:28:55,399 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfasfdsa', 'debug': 'on'}
-2024-09-25 21:28:55,404 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:28:55,406 - INFO - 192.168.23.101 - - [25/Sep/2024 21:28:55] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:30:18,094 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:30:18,095 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:30:23,415 - INFO - rendering index.html
-2024-09-25 21:30:23,420 - INFO - 192.168.23.101 - - [25/Sep/2024 21:30:23] "GET / HTTP/1.1" 200 -
-2024-09-25 21:30:29,648 - INFO - starting submit
-2024-09-25 21:30:29,648 - INFO - Received data: function=aivideo, operationtype=wisdom, url=safasfsafsa, debug=on
-2024-09-25 21:30:29,649 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'safasfsafsa', 'debug': 'on'}
-2024-09-25 21:30:29,654 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:30:29,657 - INFO - 192.168.23.101 - - [25/Sep/2024 21:30:29] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:30:33,022 - INFO - starting submit
-2024-09-25 21:30:33,022 - INFO - Received data: function=aivideo, operationtype=wisdom, url=safasfsafsa, debug=on
-2024-09-25 21:30:33,022 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'safasfsafsa', 'debug': 'on'}
-2024-09-25 21:30:33,027 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:30:33,028 - INFO - 192.168.23.101 - - [25/Sep/2024 21:30:33] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:30:35,855 - INFO - starting submit
-2024-09-25 21:30:35,855 - INFO - Received data: function=aivideo, operationtype=wisdom, url=safasfsafsa, debug=on
-2024-09-25 21:30:35,856 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'safasfsafsa', 'debug': 'on'}
-2024-09-25 21:30:35,860 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:30:35,860 - INFO - 192.168.23.101 - - [25/Sep/2024 21:30:35] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:30:36,588 - INFO - starting submit
-2024-09-25 21:30:36,588 - INFO - Received data: function=aivideo, operationtype=wisdom, url=safasfsafsa, debug=on
-2024-09-25 21:30:36,588 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'safasfsafsa', 'debug': 'on'}
-2024-09-25 21:30:36,592 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:30:36,593 - INFO - 192.168.23.101 - - [25/Sep/2024 21:30:36] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:30:37,748 - INFO - starting submit
-2024-09-25 21:30:37,748 - INFO - Received data: function=aivideo, operationtype=wisdom, url=safasfsafsa, debug=on
-2024-09-25 21:30:37,748 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'safasfsafsa', 'debug': 'on'}
-2024-09-25 21:30:37,752 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:30:37,753 - INFO - 192.168.23.101 - - [25/Sep/2024 21:30:37] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:31:20,998 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:31:20,998 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:31:25,953 - INFO - rendering index.html
-2024-09-25 21:31:25,958 - INFO - 192.168.23.101 - - [25/Sep/2024 21:31:25] "GET / HTTP/1.1" 200 -
-2024-09-25 21:31:31,613 - INFO - starting submit
-2024-09-25 21:31:31,613 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfasfd, debug=on
-2024-09-25 21:31:31,613 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfasfd', 'debug': 'on'}
-2024-09-25 21:31:31,619 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:31:31,621 - INFO - 192.168.23.101 - - [25/Sep/2024 21:31:31] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:31:55,194 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:31:55,194 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:32:00,070 - INFO - rendering index.html
-2024-09-25 21:32:00,074 - INFO - 192.168.23.101 - - [25/Sep/2024 21:32:00] "GET / HTTP/1.1" 200 -
-2024-09-25 21:32:09,295 - INFO - starting submit
-2024-09-25 21:32:09,295 - INFO - Received data: function=aivideo, operationtype=wisdom, url=dsasfsa, debug=on
-2024-09-25 21:32:09,295 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'dsasfsa', 'debug': 'on'}
-2024-09-25 21:32:09,301 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:32:09,303 - INFO - 192.168.23.101 - - [25/Sep/2024 21:32:09] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:33:15,516 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:33:15,516 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:33:20,388 - INFO - rendering index.html
-2024-09-25 21:33:20,393 - INFO - 192.168.23.101 - - [25/Sep/2024 21:33:20] "GET / HTTP/1.1" 200 -
-2024-09-25 21:33:24,866 - INFO - starting submit
-2024-09-25 21:33:24,866 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfasfs, debug=on
-2024-09-25 21:33:24,866 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfasfs', 'debug': 'on'}
-2024-09-25 21:33:24,872 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:33:24,874 - INFO - 192.168.23.101 - - [25/Sep/2024 21:33:24] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:34:31,420 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:34:31,420 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:34:36,650 - INFO - rendering index.html
-2024-09-25 21:34:36,655 - INFO - 192.168.23.101 - - [25/Sep/2024 21:34:36] "GET / HTTP/1.1" 200 -
-2024-09-25 21:34:41,362 - INFO - starting submit
-2024-09-25 21:34:41,363 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asfsadfasfas, debug=on
-2024-09-25 21:34:41,363 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asfsadfasfas', 'debug': 'on'}
-2024-09-25 21:34:41,368 - INFO - API response: This is test #2
-2024-09-25 21:34:41,370 - INFO - 192.168.23.101 - - [25/Sep/2024 21:34:41] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:38:01,368 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:38:01,368 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:38:07,338 - INFO - rendering index.html
-2024-09-25 21:38:07,342 - INFO - 192.168.23.101 - - [25/Sep/2024 21:38:07] "GET / HTTP/1.1" 200 -
-2024-09-25 21:38:13,591 - INFO - starting submit
-2024-09-25 21:38:13,591 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asfsadfasd, debug=on
-2024-09-25 21:38:13,591 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asfsadfasd', 'debug': 'on'}
-2024-09-25 21:38:13,597 - INFO - API response: This is test #2
-2024-09-25 21:38:13,597 - INFO - 192.168.23.101 - - [25/Sep/2024 21:38:13] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:38:15,726 - INFO - starting submit
-2024-09-25 21:38:15,727 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asfsadfasd, debug=on
-2024-09-25 21:38:15,727 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asfsadfasd', 'debug': 'on'}
-2024-09-25 21:38:15,731 - INFO - API response: This is test #2
-2024-09-25 21:38:15,732 - INFO - 192.168.23.101 - - [25/Sep/2024 21:38:15] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:38:39,379 - INFO - rendering index.html
-2024-09-25 21:38:39,379 - INFO - 192.168.23.101 - - [25/Sep/2024 21:38:39] "GET / HTTP/1.1" 200 -
-2024-09-25 21:38:44,778 - INFO - starting submit
-2024-09-25 21:38:44,778 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfsadfsafa, debug=on
-2024-09-25 21:38:44,778 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfsadfsafa', 'debug': 'on'}
-2024-09-25 21:38:44,783 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:38:44,783 - INFO - 192.168.23.101 - - [25/Sep/2024 21:38:44] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:38:50,387 - INFO - starting submit
-2024-09-25 21:38:50,387 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfsadfsafa, debug=on
-2024-09-25 21:38:50,387 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfsadfsafa', 'debug': 'on'}
-2024-09-25 21:38:50,392 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:38:50,392 - INFO - 192.168.23.101 - - [25/Sep/2024 21:38:50] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:38:51,791 - INFO - starting submit
-2024-09-25 21:38:51,791 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfsadfsafa, debug=on
-2024-09-25 21:38:51,791 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfsadfsafa', 'debug': 'on'}
-2024-09-25 21:38:51,795 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:38:51,796 - INFO - 192.168.23.101 - - [25/Sep/2024 21:38:51] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:38:52,633 - INFO - starting submit
-2024-09-25 21:38:52,634 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfsadfsafa, debug=on
-2024-09-25 21:38:52,634 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfsadfsafa', 'debug': 'on'}
-2024-09-25 21:38:52,638 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:38:52,638 - INFO - 192.168.23.101 - - [25/Sep/2024 21:38:52] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:38:54,673 - INFO - starting submit
-2024-09-25 21:38:54,674 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfsadfsafa, debug=on
-2024-09-25 21:38:54,674 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfsadfsafa', 'debug': 'on'}
-2024-09-25 21:38:54,678 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:38:54,678 - INFO - 192.168.23.101 - - [25/Sep/2024 21:38:54] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:39:12,171 - INFO - starting submit
-2024-09-25 21:39:12,172 - INFO - Received data: function=aivideo, operationtype=wisdom, url=https://youtu.be/jM_jdsx5yFc, debug=False
-2024-09-25 21:39:12,172 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'https://youtu.be/jM_jdsx5yFc', 'debug': False}
-2024-09-25 21:39:43,368 - INFO - API response: # SUMMARY
-
-This video presents CHEP releasing his new Cura 5 profiles, including a hyper fast profile.
-
-# IDEAS:
-- CHEP created a test print that has the Cura symbol and various letters.
-- Cura 5.0 has some unique capabilities to control the line width when printing walls.
-- CHEP's most popular profile now is his extra fast profile for Cura 5.
-- CHEP has fixed the gaps in the top surface that were present in his extra fast profile.
-- CHEP's extra fast profile is becoming his favorite profile to use for printing.
-- CHEP had a jig that he made for soldering a circuit board, printed with extra fast.
-- CHEP's viewer Sabretooth Turtle improved CHEP's extra fast profile to make it faster.
-- CHEP experimented with Sabretooth Turtle's settings and produced a hyper fast profile.
-- CHEP's hyper fast profile is strictly for a quick functional print.
-- CHEP's hyper fast profile printed the test print in 22 minutes, 9 minutes faster.
-- CHEP printed the soldering jig in 44 minutes with the hyper fast profile.
-- CHEP's hyper fast profile print quality is not as good, but still not bad.
-- CHEP is releasing his hyper fast profile as a beta since he is still playing with it.
-- CHEP now has high quality, medium quality, fast printing, and hyper fast printing profiles.
-
-# INSIGHTS:
-- Cura 5 has new features that require profile adjustments to achieve optimal quality.
-- There is a trade-off between print speed and print quality.
-- Faster print profiles can save a significant amount of time.
-- Functional prints do not always require high quality settings.
-- Community collaboration can lead to improvements in print profiles.
-- Continuous experimentation is key to optimizing print profiles.
-
-# QUOTES:
-- "i still don't feel i'm a hundred percent this is like maybe 99 percent of where i want to get to"
-- "i think the 0.2 layer height is probably the best bang for the buck"
-- "i don't think it's really worth the quality to get the best but on some prints it may be"
-- "this extra fast profile is becoming my favorite profile to do pretty much anything now"
-- "frankly i wasn't getting anywhere near as good a quality but he had some very interesting settings in there"
-- "strictly for a quick print quick functional print you really don't care how good the top surface is although it's not bad"
-- "that's almost a third faster and the quality definitely not as good but not bad"
-- "again i would not call this the prettiest there's some little gaps in the base"
-- "44 minutes i can go to lunch and come back and have a print ready to go"
-- "man this is fantastic i now have high quality medium quality fast printing and hyper fast printing"
-
-# HABITS:
-- CHEP experiments with different settings to improve print quality and speed.
-- CHEP listens to feedback from his viewers and tries their suggestions.
-- CHEP is willing to share his profiles with the community.
-
-# FACTS:
-- Cura 5.0 has new features that affect print quality.
-- 0.2 layer height provides a good balance between quality and speed.
-- Reducing layer height increases print time.
-- Print speed can be increased by adjusting print settings.
-
-# REFERENCES:
-- Cura 5
-- Cura 5 profiles
-- Hyper fast profile
-- Extra fast profile
-- CHEP's soldering jig
-- Sabretooth Turtle's profile
-- Patreon
-
-# ONE-SENTENCE TAKEAWAY:
-
-CHEP's new Cura 5 profiles offer a range of quality and speed options for 3D printing.
-
-# RECOMMENDATIONS:
-- Try CHEP's new Cura 5 profiles to find the best one for your needs.
-- Experiment with different print settings to optimize print quality and speed.
-- Join the 3D printing community to share and learn from others.
-- Consider using a 0.2 layer height for a balance of quality and print time.
-- Use the hyper fast profile for functional prints where speed is a priority.
-
-
-2024-09-25 21:39:43,369 - INFO - 192.168.23.101 - - [25/Sep/2024 21:39:43] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:42:07,678 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:42:07,679 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:42:13,297 - INFO - rendering index.html
-2024-09-25 21:42:13,301 - INFO - 192.168.23.101 - - [25/Sep/2024 21:42:13] "GET / HTTP/1.1" 200 -
-2024-09-25 21:42:15,626 - INFO - rendering index.html
-2024-09-25 21:42:15,627 - INFO - 192.168.23.101 - - [25/Sep/2024 21:42:15] "GET / HTTP/1.1" 200 -
-2024-09-25 21:42:32,046 - INFO - rendering index.html
-2024-09-25 21:42:32,047 - INFO - 192.168.23.101 - - [25/Sep/2024 21:42:32] "GET / HTTP/1.1" 200 -
-2024-09-25 21:42:40,075 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:42:40,075 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:42:42,877 - INFO - rendering index.html
-2024-09-25 21:42:42,881 - INFO - 192.168.23.101 - - [25/Sep/2024 21:42:42] "GET / HTTP/1.1" 200 -
-2024-09-25 21:44:40,448 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5005
- * Running on http://192.168.23.10:5005
-2024-09-25 21:44:40,449 - INFO - [33mPress CTRL+C to quit[0m
-2024-09-25 21:44:44,093 - INFO - rendering index.html
-2024-09-25 21:44:44,098 - INFO - 192.168.23.101 - - [25/Sep/2024 21:44:44] "GET / HTTP/1.1" 200 -
-2024-09-25 21:44:50,460 - INFO - starting submit
-2024-09-25 21:44:50,460 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfasfsfs, debug=on
-2024-09-25 21:44:50,460 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfasfsfs', 'debug': 'on'}
-2024-09-25 21:44:50,466 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:44:50,466 - INFO - 192.168.23.101 - - [25/Sep/2024 21:44:50] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:44:52,770 - INFO - starting submit
-2024-09-25 21:44:52,771 - INFO - Received data: function=aivideo, operationtype=wisdom, url=asdfasfsfs, debug=on
-2024-09-25 21:44:52,771 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'asdfasfsfs', 'debug': 'on'}
-2024-09-25 21:44:52,775 - INFO - API response: ONE SENTENCE SUMMARY: The next decade will be about AI agents that are trained like employees and will perform tasks and collaborate to achieve missions.
-
-MAIN POINTS:
-1. The tech industry is moving towards an industry of skills.
-2. AI agents will sit on top of tools and use them to solve problems.
-3. Agents will be able to reason, collaborate, and communicate with each other.
-4. Users will be able to give feedback to agents, helping improve prompts and output.
-5. Onboarding agents will be more like onboarding employees than writing software.
-6. Users will be able to communicate with agents, giving missions and showing examples.
-7. Agents will be able to ask clarifying questions and request additional examples.
-8. There will be specialized agents with expertise in particular skills and access to certain information.
-9. General-purpose agents will be able to reason about tasks and break down missions into smaller steps.
-10. AI is advancing rapidly, enabling breakthroughs in fields like digital biology and disease diagnosis.
-
-TAKEAWAYS:
-1. AI agents represent a significant shift in the tech industry, moving from tools to skills.
-2. The interaction with AI agents will be more human-like, involving communication, feedback, and collaboration.
-3. AI agents will automate tasks and augment human capabilities, leading to increased efficiency and productivity.
-4. The next decade will be marked by rapid advancements in AI, leading to breakthroughs in various fields.
-5. AI agents will be integrated into various aspects of life, from education to scientific research and company operations. 
-
-
-2024-09-25 21:44:52,776 - INFO - 192.168.23.101 - - [25/Sep/2024 21:44:52] "POST /submit HTTP/1.1" 200 -
-2024-09-25 21:45:17,079 - INFO - starting submit
-2024-09-25 21:45:17,080 - INFO - Received data: function=aiweb, operationtype=wisdom, url=https://www.cnbc.com/2024/09/26/new-york-city-mayor-eric-adams-indicted-in-federal-court.html, debug=False
-2024-09-25 21:45:17,080 - INFO - Sending payload to API: {'function': 'aiweb', 'operationtype': 'wisdom', 'url': 'https://www.cnbc.com/2024/09/26/new-york-city-mayor-eric-adams-indicted-in-federal-court.html', 'debug': False}
-2024-09-25 21:45:34,866 - INFO - API response: # SUMMARY
-
-CNBC reports that NYC Mayor Eric Adams was indicted on federal criminal charges related to his 2021 mayoral campaign.
-
-# IDEAS:
-
-- Eric Adams is the first NYC mayor to be criminally charged while still in office.
-- The indictment is related to donations to his 2021 mayoral campaign.
-- The Manhattan U.S. Attorney’s Office is investigating Adams.
-- Prosecutors allege Adams conspired with the Turkish government.
-- They allege the Turkish government funneled illegal donations into his campaign.
-- Prosecutors subpoenaed City Hall, Adams, and his campaign in July.
-- The subpoenas demanded information related to Israel, China, Qatar, South Korea, and Uzbekistan.
-- Adams issued a defiant statement saying he would fight the charges.
-- Rep. Alexandria Ocasio-Cortez called on the mayor to resign.
-- She said the “flood of resignations and vacancies” are threatening government functions.
-- If Adams resigns, New York City Public Advocate Jumaane Williams would become acting mayor.
-- There are multiple federal investigations into Adams and people affiliated with him.
-- City Schools Chancellor David Banks told Adams he expected to retire at the end of 2024.
-- Federal authorities seized electronic devices belonging to Banks, his brother, and his fiancée.
-- Another Banks brother, Terence, is being investigated by the Manhattan U.S. Attorney’s Office.
-- The investigation is related to the allocation of city contracts worth millions of dollars.
-
-# INSIGHTS:
-
-- The indictment of Mayor Adams raises concerns about corruption in New York City government.
-- The multiple federal investigations suggest a pattern of potential wrongdoing within the administration.
-- The allegations against Adams and his associates could have significant political and legal ramifications.
-- The situation highlights the importance of transparency and accountability in government.
-- The calls for Adams' resignation reflect the erosion of public trust in his leadership. 
-
-# QUOTES:
-
-- "I always knew that If I stood my ground for New Yorkers that I would be a target — and a target I became." - Eric Adams
-- "If I am charged, I am innocent and I will fight this with every ounce of my strength and spirit." - Eric Adams
-- "For the good of the city he should resign." - Alexandria Ocasio-Cortez
-
-# HABITS:
-
-- N/A - No personal habits of the speakers were mentioned in this content.
-
-# FACTS:
-
-- Eric Adams is the current mayor of New York City.
-- Adams is a former New York City police officer and state senator.
-- The Manhattan U.S. Attorney’s Office is investigating Adams.
-- The investigation is related to donations to his 2021 mayoral campaign.
-- Adams is the first New York mayor to be criminally charged while in office.
-- If Adams resigns, New York City Public Advocate Jumaane Williams would become acting mayor.
-- Federal authorities seized electronic devices belonging to Schools Chancellor David Banks.
-- They also seized devices belonging to Banks' brother, Deputy Mayor Phil Banks.
-- Devices were also seized from Banks' fiancee, Deputy Mayor Sheena Wright.
-
-# REFERENCES:
-
-- New York Times
-
-# ONE-SENTENCE TAKEAWAY:
-
-NYC Mayor Eric Adams faces federal criminal charges related to his 2021 campaign, prompting calls for his resignation. 
-
-# RECOMMENDATIONS:
-
-- N/A - No recommendations were found in this content. 
-
-
-2024-09-25 21:45:34,867 - INFO - 192.168.23.101 - - [25/Sep/2024 21:45:34] "POST /submit HTTP/1.1" 200 -
-2024-09-25 22:12:19,643 - INFO - rendering index.html
-2024-09-25 22:12:19,644 - INFO - 192.168.23.104 - - [25/Sep/2024 22:12:19] "GET / HTTP/1.1" 200 -
-2024-09-25 22:14:41,161 - INFO - starting submit
-2024-09-25 22:14:41,161 - INFO - Received data: function=aivideo, operationtype=wisdom, url=https://www.youtube.com/live/VUe-uKy3aNM?si=_2NuOMrxr2pP6ke8, debug=False
-2024-09-25 22:14:41,161 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'https://www.youtube.com/live/VUe-uKy3aNM?si=_2NuOMrxr2pP6ke8', 'debug': False}
-2024-09-25 22:16:12,296 - INFO - API response: ## SUMMARY
-
-This is a live stream with Mark Zuckerberg presenting the Meta Quest 3 and Orion glasses.
+2024-09-27 07:34:58,308 - INFO - 192.168.23.104 - - [27/Sep/2024 07:34:58] "POST /submit HTTP/1.1" 200 -
+2024-09-27 20:30:16,937 - INFO - rendering index.html
+2024-09-27 20:30:16,938 - INFO - 192.168.23.104 - - [27/Sep/2024 20:30:16] "GET / HTTP/1.1" 200 -
+2024-09-27 20:32:09,780 - INFO - starting submit
+2024-09-27 20:32:09,780 - INFO - Received data: function=aivideo, operationtype=wisdom, url=https://youtu.be/ZxZO0jd8VoU?si=ay62XqLBO4F2Ccdl, debug=False
+2024-09-27 20:32:09,780 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'https://youtu.be/ZxZO0jd8VoU?si=ay62XqLBO4F2Ccdl', 'debug': False}
+2024-09-27 20:32:52,993 - INFO - API response: # SUMMARY
+
+This video by Second Thought discusses BlackRock and other asset managers, their control of the market, and the impact on society.
+
+# IDEAS
+
+- BlackRock manages $10.6 trillion, more than half of the United States GDP.
+- BlackRock has stock in 95% of Fortune 500 companies.
+- Governments hire BlackRock to help manage financial crises.
+- BlackRock provides index funds, which give them a loophole of "passivity".
+- The index fund offers investors a way to invest in many stocks at once.
+- Index funds are a form of mutual fund where people pool money to invest.
+- Asset managers manage the pooled money in mutual funds.
+- Most of the money asset managers manage comes from institutional investors.
+- These institutional investors include pension funds, insurance companies, and nonprofits.
+- The money institutional investors manage comes from regular people.
+- Asset managers almost always vote with company executives' recommendations.
+- In the 1980s, investors started offering company managers stock options.
+- This tied executive pay to company profits, funneling money back to investors.
+- Universal ownership refers to holding shares in the entire stock market.
+- The Big Three (BlackRock, Vanguard, and State Street) own a sizable stake in all listed corporations.
+- They own enough stock that selling it all at once would likely crash the market.
+
+# INSIGHTS
+
+- BlackRock's power comes from managing trillions of dollars in index funds.
+- Index funds offer lower risk, more consistent returns, and are cheaper to manage.
+- The majority of money managed by asset managers comes from regular people.
+- Asset managers are incentivized to maximize corporate profits, not worker pay.
+- Universal ownership may be responsible for rising prices and reduced competition.
+- BlackRock has significant influence in government and international institutions.
+- BlackRock profits off of every aspect of our lives while controlling a minimum amount.
+- Asset managers have a conflict of interest in self-certifying their own passivity.
+- Regulating asset managers like BlackRock will be difficult due to their political influence.
+- We have shifted from shareholder democracy to a shareholder oligarchy.
+
+# QUOTES
+
+- "They have stock in 95% of Fortune 500 companies."
+- "That means that pretty much anytime you interact with the economy, working, buying stuff, driving a car, going to the bank, anything, you're interacting with BlackRock."
+- "Index funds are a form of mutual fund."
+- "When you have $1 trillion, you have to put them somewhere, and eventually, that somewhere becomes everywhere."
+- "BlackRock is a 3 to 10% shareholder in all of these companies."
+- "5% is taken as a threshold for control."
+- "The amount of stock you have determines the number of votes you get."
+- "They make their profits from the fees they charge their clients, not from the returns on the money they invest."
+- "The fees you earn increase when the market value of the assets you manage increases."
+- "They own so much that it would be impossible for them to sell out of any one stock in one fell swoop."
+- "Today, households have more like 40% of the stock market, and about half of that belongs to the top 10%."
+- "The top 1% own 50% of corporate equity and mutual fund shares, while the top 10% own 86%."
+- "The tiny green part on the bottom is the least wealthy half of Americans."
+- "The bottom 50% virtually owns no shares at all."
+- "They play a huge part in wage stagnation."
+- "They have significant stakes in Nike, Adidas, Lululemon, and Under Armour."
+- "BlackRock reportedly believes that meetings behind closed doors can go further than votes against management."
+- "There's a sort of revolving door between BlackRock, the government, and the international [institutions] that create monetary policy."
+- "They play all sides of the game because at a certain point, you can't lose when you play against yourself."
+
+# HABITS
+
+- BlackRock engages in extensive lobbying to influence government policy.
+- BlackRock holds private meetings with companies in their portfolio.
+- BlackRock hires former government officials to gain access and influence.
+- BlackRock uses legal loopholes to avoid regulation and oversight.
+
+# FACTS
+
+- BlackRock manages over $10.6 trillion in assets.
+- BlackRock is a shareholder in 95% of Fortune 500 companies.
+- Index funds are designed to track a specific market index.
+- Asset managers earn profits through fees charged to their clients.
+- The top 1% of Americans own 50% of corporate equity.
+- The top 10% of Americans own 86% of corporate equity.
+- Stock options tie executive pay to company performance.
+- Universal ownership leads to reduced competition between companies.
+- The Consumer Financial Protection Bureau and the FDIC are working to increase regulation of asset managers.
+
+# REFERENCES
+
+- Fortune 500 companies
+- Wolf of Wall Street
+- Amazon
+- Jeff Bezos
+- Nike
+- Adidas
+- Lululemon
+- Under Armour
+- US Treasury
+- Federal Reserve
+- Central Bank of Canada
+- Central Banks of European countries
+- Central Bank of Sweden
+- International Monetary Fund
+- World Economic Forum
+- Hillary Clinton
+- Financial Stability Oversight Council
+- DC Metro
+- Consumer Financial Protection Bureau
+- FDIC
+
+# ONE-SENTENCE TAKEAWAY
+
+BlackRock's vast control over the market raises concerns about competition, fairness, and regulation.
+
+# RECOMMENDATIONS
+
+- Educate yourself about the role of asset managers in the economy.
+- Support policies that increase regulation and oversight of asset managers.
+- Consider investing in companies that prioritize worker well-being and fair competition.
+- Advocate for greater transparency and accountability in financial markets.
+- Diversify your investments to reduce your reliance on large asset managers.
+
+
+2024-09-27 20:32:52,994 - INFO - 192.168.23.104 - - [27/Sep/2024 20:32:52] "POST /submit HTTP/1.1" 200 -
+2024-09-27 20:34:49,010 - INFO - rendering index.html
+2024-09-27 20:34:49,011 - INFO - 192.168.23.104 - - [27/Sep/2024 20:34:49] "GET / HTTP/1.1" 200 -
+2024-09-27 20:34:57,307 - INFO - starting submit
+2024-09-27 20:34:57,307 - INFO - Received data: function=aivideo, operationtype=wisdom, url=https://youtu.be/ZxZO0jd8VoU?si=ay62XqLBO4F2Ccdl, debug=False
+2024-09-27 20:34:57,307 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'https://youtu.be/ZxZO0jd8VoU?si=ay62XqLBO4F2Ccdl', 'debug': False}
+2024-09-27 20:35:46,699 - INFO - API response: # SUMMARY
+
+This video is about BlackRock and how asset managers like them control the economy.
+
+# IDEAS
+
+- BlackRock manages over $10.6 trillion, more than half of the United States GDP.
+- BlackRock has stock in 95% of Fortune 500 companies, making them a huge player in the market.
+- BlackRock claims to be passive investors, but they have an outsized influence on the economy.
+- Index funds are a type of mutual fund that tracks a specific market index, like the S&P 500.
+- Index funds are popular because they are low-cost and offer diversification, making them attractive to investors.
+- BlackRock makes money from the fees they charge clients, not from the returns on the investments.
+- Universal ownership refers to owning shares in every company in the stock market, which is BlackRock's goal.
+- BlackRock is often the largest shareholder in the companies they invest in, giving them significant voting power.
+- In the 1980s, investors started offering company managers stock options to align their interests with shareholders.
+- This shift incentivized managers to focus on short-term profits, often at the expense of workers and long-term growth.
+- BlackRock's universal ownership model has contributed to wage stagnation and rising prices for consumers.
+- BlackRock has close ties to the government, hiring former officials and lobbying against regulations.
+- BlackRock self-certifies its own passivity, avoiding government oversight that applies to other financial institutions.
+- The biggest investors in BlackRock are Vanguard and State Street, and vice versa, creating a closed loop of ownership.
+- This closed loop concentrates financial power in the hands of a few, undermining shareholder democracy.
+- The current system incentivizes asset managers to prioritize short-term profits, even if it harms the economy.
+- We need a better system that gives workers and consumers more power over how wealth is created and distributed.
+
+# INSIGHTS
+
+- Asset managers like BlackRock have an outsized influence on the economy, despite claiming to be passive investors.
+- The rise of index funds and universal ownership has concentrated financial power in the hands of a few institutions.
+- The current system incentivizes short-term profits over long-term growth and worker well-being.
+- The lack of oversight and regulation of asset managers poses a systemic risk to the economy.
+- We need to rethink the role of shareholders and create a system that prioritizes the interests of all stakeholders.
+- The concentration of ownership in the financial sector undermines competition and leads to higher prices for consumers.
+- The revolving door between government and finance gives asset managers undue influence over policy decisions.
+- The current system of shareholder "democracy" is more like an oligarchy, where a few powerful institutions call the shots.
+- The pursuit of short-term profits by asset managers has contributed to wage stagnation and rising inequality.
+- We need to find ways to democratize the economy and give workers and consumers a greater say in how it is run.
+
+# QUOTES
+
+- "They have stock in 95% of Fortune 500 companies and they've been hired by governments across the world to help manage financial crisis and even just conduct normal operations."
+- "That means that pretty much anytime you interact with the economy, working, buying stuff, driving a car, going to the bank, anything, you're interacting with BlackRock."
+- "They own so much that it would be impossible for them to sell out of any one stock in one fell swoop."
+- "The fees you earn if you're BlackRock increase when the market value of the assets you manage increases."
+- "You maximize your assets and the management by winning over new clients and by getting the clients that you already have to give you more money."
+- "When you have $1 trillion, do you have to put them somewhere and eventually that somewhere becomes everywhere."
+- "Universal ownership refers to holding shares in the entire universe of firms listed on the stock market."
+- "BlackRock is a three to ten percent shareholder in all of these companies."
+- "If and when shareholders is dispersed, five percent makes you in all likelihood the single largest shareholder in that company."
+- "They make their profits from the fees they charge their clients, not from the returns on the money they invest."
+- "They typically give management a year before voting against them."
+- "They also have a lot of friends in the government, there's a sort of revolving door between BlackRock, the government, and the international."
+- "Larry Fink himself is on the board of the World Economic Forum and even tried to get himself selected as Hillary Clinton's treasury secretary in 2016."
+- "The asset managers of course are not happy and they are lobbying against this, so regulating them much further is going to prove difficult."
+- "We no longer have the old system of shareholder democracy, we have something more like a shareholder oligarchy."
+- "They play all sides of the game because at a certain point, you can't lose when you play against yourself."
+- "They profit off of every bit of your life while controlling just the minimum amount they need to make sure they can continue profiting off of every bit of your life."
+
+# HABITS
+
+- BlackRock actively lobbies the government to avoid regulations.
+- BlackRock hires former government officials to gain influence.
+- BlackRock engages in private meetings with companies they invest in.
+- BlackRock typically gives company management a year before voting against them.
+- BlackRock focuses on maximizing assets under management to increase fees.
+
+# FACTS
+
+- BlackRock manages over $10.6 trillion in assets.
+- BlackRock has stock in 95% of Fortune 500 companies.
+- The top 1% of Americans own 50% of corporate equity.
+- The top 10% of Americans own 86% of corporate equity.
+- In 1945, 94% of stocks were owned by households.
+- Today, households own about 40% of the stock market.
+- BlackRock performed over 1,500 private engagements with companies in their portfolio from 2014 to 2015.
+- BlackRock has hired at least 84 former government officials since 2004.
+
+# REFERENCES
+
+- Fortune 500 companies
+- Index funds
+- ETFs
+- Mutual funds
+- Pension funds
+- Insurance companies
+- University endowments
+- 401Ks
+- Wolf of Wall Street
+- Amazon
+- Jeff Bezos
+- Nike
+- Adidas
+- Lululemon
+- Under Armour
+- Airlines
+- Major banks
+- Financial Stability Oversight Council (FSOC)
+- Consumer Financial Protection Bureau
+- FDIC
+- DC Metro
+- World Economic Forum
+- Hillary Clinton
+
+# ONE-SENTENCE TAKEAWAY
+
+BlackRock's universal ownership model undermines competition and concentrates financial power, harming workers and consumers.
+
+# RECOMMENDATIONS
+
+- Support regulations that increase oversight of asset managers.
+- Advocate for policies that promote worker ownership and profit-sharing.
+- Invest in companies that prioritize long-term growth and sustainability.
+- Support efforts to democratize the economy and give workers a greater voice.
+- Be aware of the influence of asset managers and their impact on your life. 
+
+
+2024-09-27 20:35:46,699 - INFO - 192.168.23.104 - - [27/Sep/2024 20:35:46] "POST /submit HTTP/1.1" 200 -
+2024-09-27 21:29:50,674 - INFO - starting submit
+2024-09-27 21:29:50,674 - INFO - Received data: function=aivideo, operationtype=wisdom, url=https://youtu.be/0Hfb4qtpqlg?si=ZepkrP1Vy1_RcmxI, debug=False
+2024-09-27 21:29:50,674 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'https://youtu.be/0Hfb4qtpqlg?si=ZepkrP1Vy1_RcmxI', 'debug': False}
+2024-09-27 21:30:30,659 - INFO - API response: ## SUMMARY
+
+Andrew Huberman, a neuroscientist, presents a simple 2-rule system for healthy eating to stay lean.
 
 ## IDEAS:
-- The Meta Quest 3s is priced at $300 and includes controllers.
-- The Meta Quest 3s has been leaked in Walmart, revealing its design.
-- The Meta Quest 3s is expected to have a 512 GB storage option.
-- The Meta Quest 3s will be sold alongside the Quest 3.
-- The Meta Quest 3s features six cameras for color passthrough.
-- The Meta Quest 3s will include the game Batman Arkham VR.
-- Meta is hoping for longer recording capabilities for Ray-Ban glasses.
-- Meta is working on third-party controller support for Quest devices.
-- Meta believes the metaverse should be an interconnected open space.
-- Meta's AI assistant is expected to be the most used in the world.
-- Meta is releasing an open-source Llama 3.2 AI model.
-- Meta AI will have natural voice interaction capabilities.
-- Meta AI will be able to understand images and text.
-- Meta is partnering with Be My Eyes to provide AI assistance to blind people.
-- Meta is developing photorealistic avatars and spaces for the metaverse.
-- Meta is working on a prototype of full holographic AR glasses called Orion.
-- Orion glasses are lightweight and feature a wide field of view.
-- Orion glasses will be controlled by voice, hand tracking, and eye tracking.
-- Orion glasses are powered by a wrist-based neural interface.
-- Orion glasses will be used as a dev kit to build out software.
-- Meta is working on making Orion smaller, more fashionable, and affordable.
+- Eating a high-fat, low-carb diet can help you gain muscle and lose fat.
+- Insulin is the key to the fat cell; it opens it up and fills it with fat.
+- To gain muscle and for your fat cells to grow, you need some insulin.
+- If you have too much insulin, you store too much fat.
+- You can eat plenty of calories to build muscle but store very little fat.
+- It's very difficult to overeat on carbohydrates and protein.
+- If you only ate protein and carbs, you would probably starve to death.
+- Rabbit meat is so lean that if you ate an unlimited amount of it, you would die.
+- You cannot live on a diet of just rabbit meat because it's too low in fat.
+- You would have plenty of protein and food in your stomach but not enough calories.
+- Carbohydrates and proteins together don't make you fat.
+- Healthy fats are essential; without fats you can die.
+- Essential fatty acids are essential, meaning your body cannot produce them.
+- A very small percentage of society will be able to mix carbs and fats and not gain weight.
+- The vast majority of society, if you mix fat and carbs together, you will gain weight.
+- If you're going to mix carbs and fats, you've got to do calorie counting.
+- There are methods that work for calorie counting but they can be tedious to follow.
+- Skipping a meal a day and eating high carb, low fat is highly effective for staying lean.
 
 ## INSIGHTS:
-- The release of the Meta Quest 3s aims to make VR more accessible.
-- Meta's focus on AI highlights its belief in the future of human-computer interaction.
-- The development of Orion showcases Meta's commitment to pushing technological boundaries.
-- Meta's vision for the metaverse emphasizes interconnectivity and open access.
-- The partnership with Be My Eyes demonstrates the potential of AI for social good.
-- The focus on local AI processing emphasizes privacy and user experience.
-- The development of photorealistic avatars and spaces aims to enhance immersion.
-- Meta's emphasis on natural voice interaction seeks to make AI more intuitive.
-- The iterative approach to Orion's development highlights a commitment to continuous improvement.
-- The quest for smaller and lighter VR headsets reflects the desire for greater comfort.
+- A high-fat, low-carb diet works because it keeps insulin levels low.
+- Eating only protein and carbs is not sustainable for long-term health.
+- Healthy fats are essential for survival.
+- Most people gain weight when they mix carbohydrates and fats.
+- Eating a high-carb, low-fat diet can be an effective way to stay lean.
+- Avoiding simple sugars is key to staying lean on a high-carb diet.
+- Focus on eating grains and potatoes on a high-carb diet.
+- Enjoy your food, eat like a king, and you'll never be hungry or have cravings.
+- Find a diet that works for you and stick to it.
+- Listen to your body and adjust your diet as needed.
 
 ## QUOTES:
-- "They're going to launch the quest 3s way too many leaks and the fact that it showed up in Walmart."
-- "The quest 3s is $300 without the controllers."
-- "I guess the only thing we don't know is the weight."
-- "I'm hoping for new Ray-Bans as well to be honest."
-- "I think they might release maybe like a cheaper version of the device without the controllers and possibly with the pen instead."
-- "The future of human connection so that is the you know the part I'd say that we're most interested in."
-- "The bot will not read out polish okay like that or any other language for that matter."
-- "The quest 3 is only 512 gigs there's no other option."
-- "I wish third party controllers were announced a VR first controllers that are light good tracking minimal buttons and that allow you to grab drinks and things while using them."
-- "I still think they're really really cool um but the longer recording would definitely do it for me."
-- "The metaverse correctly done correctly is literally just an open space kind of like the internet that we have right now but in virtual reality."
-- "I would love to say it's the thing is going to start getting smaller and thinner."
-- "I think they should focus on you know joining forces and creating something together that would probably also give them more processing power to be honest."
-- "They have done a lot of really good for uh virtual reality and augmented reality that maybe wouldn't have been possible without them."
-- "They went into the space very aggressively okay."
-- "We all know they came from Facebook and Facebook isn't exactly the most trustworthy and the most you know um I guess trustworthy let's just leave it at trustworthy company."
-- "We wouldn't be where we are today if they didn't do that."
-- "I think right now is well actually price as well price someone said price price of course is one thing but in the actual technology itself you'd really want this thing to be as small and as light as possible."
-- "The main issue I think right now is motion sickness as I found out recently not with myself but with my friends uh they can't stay in there for too long."
-- "It's actually a huge pain to put on VR gloves a lot of them are like really stiff in a weird way."
-- "I just put the stream in a picture in picture mode and it says 1258 out of 17 what it's so it's like the stream seems to be extending its own time by a few minutes."
-- "Virtual reality for Education absolutely fantastic same with Augmented Reality by the way."
-- "Meta AI on your glasses is going to be able to translate for you in real time."
+- "Insulin is like the key to the fat cell; it opens up the fat cell and stuffs it with fat."
+- "Carbohydrates and proteins together don't make you fat."
+- "Healthy fats are essential, without fats you can die, you will die."
+- "You can't mix sugar and fat together and expect to stay slim."
+- "The vast majority of society, if you mix fat and carbs together, you will gain weight."
+- "If you're going to mix carbs and fats, you've got to do a calorie countdown."
+- "Skipping a meal a day, usually I eat breakfast, lunch, and a snack, high carb, low fat, and I get super lean, very fast."
+- "The two most important rules: one, don't eat any foods that have more than three grams of fat per 100 calorie, and two, don't eat simple sugars."
 
 ## HABITS:
-- Mark Zuckerberg uses a standing desk while working outside.
-- Mark Zuckerberg enjoys using transparent technology.
-- Mark Zuckerberg is a fan of root access.
-- The speaker plays a variety of VR games, including Beat Saber and Minecraft VR.
-- The speaker enjoys playing mini golf and bowling games in VR with friends.
-- The speaker prefers wireless VR experiences over wired ones.
-- The speaker uses Samsung Evo SD cards for recording.
-- The speaker enjoys listening to music, audiobooks, and taking calls on smart glasses.
-- The speaker prioritizes the right to repair and freedom in technology.
-- The speaker uses a simple internet setup with an antenna attached to the roof.
+- Eats a high-carb, low-fat diet.
+- Does intermittent fasting.
+- Eats breakfast, lunch, and a snack.
+- Skips a meal a day.
+- Eats extra lean meat.
+- Avoids simple sugars like jam, syrup, and honey.
+- Eats grains, potatoes, soups, and stews.
+- Makes low-fat pancakes.
+- Enjoys dried pineapple as a snack.
+- Increases fat intake when getting too light.
 
 ## FACTS:
-- Meta Quest 3s will cost $329.99 in Europe.
-- Meta Quest 3 will cost $699.99 in Europe.
-- The Meta Quest 3s has a 96° by 90° field of view.
-- The Meta Quest 3s has a resolution of 773 pixels per inch.
-- The Meta Quest 3s has a 4,324 milliamp hour battery.
-- The Meta Quest 3s has two times faster GPU processing power than the Quest 2.
-- The Meta Quest 3s has 8 GB of RAM.
-- The Meta Quest 3s is available in 128 GB and 256 GB storage options.
-- Meta AI has almost 500 million monthly active users.
-- The average run time of the Meta Quest 3s is 2.5 hours.
-- The Orion glasses weigh less than 100 grams.
-- The Orion glasses are made of silicone carbide.
-- The Orion glasses have a 70° field of view.
-- The Orion glasses are powered by a battery that fits in the arm.
-- The Orion glasses are controlled by voice, hand tracking, and eye tracking.
+- Every gram of fat has nine calories.
+- Every gram of carbohydrate has four calories.
+- Every gram of protein has four calories.
+- Rabbit meat is very lean.
+- Healthy fats are essential for human survival.
+- 85% of people gain weight when they mix fats and carbohydrates.
 
 ## REFERENCES:
-- Meta Quest 3
-- Meta Quest 3s
-- Orion glasses
-- Ray-Ban Meta glasses
-- Llama 3.2
-- Meta AI
-- Be My Eyes
-- Microsoft
-- Spotify
-- Amazon Music
-- Audible
-- iHeartRadio
-- YouTube
-- Twitch
-- Batman Arkham VR
-- Triangle Strategy
-- Just Dance
-- Supernatural
-- Xbox Cloud Gaming
-- Netflix
-- Amazon Prime Video
-- CR Droid
-- Xiaomi mi-13 Pro
-- Razer Anzo Smart Glasses
-- Bose
-- Samsung Evo SD cards
-- PlayStation Vita
+- *The Schwarzbein Principle II: The Transition: A Regeneration Process to Prevent and Reverse Accelerated Aging* by Diana Schwarzbein
 
-## ONE-SENTENCE TAKEAWAY
+## ONE-SENTENCE TAKEAWAY:
 
-Meta unveiled the affordable Quest 3s, AI advancements, and a prototype of groundbreaking AR glasses.
+To stay lean, limit food to three grams of fat per 100 calories and avoid simple sugars. 
+
+## RECOMMENDATIONS:
+- Look at the nutritional information of food before you consume it.
+- Ask yourself: does it have more than three grams of fat per 100 calories?
+- Avoid foods with simple sugars like jam, syrup, and honey.
+- Eat grains, potatoes, soups, and stews.
+- Make low-fat, high-protein pancakes.
+- Enjoy dried pineapple and dates in moderation.
+- Increase your fat intake if you are getting too light.
+- Find a diet that works for you and stick to it.
+- Listen to your body and adjust your diet as needed.
+- Enjoy your food and eat like a king.
+- Don't be afraid to experiment with different diets.
+- Find a balance that works for you and your lifestyle.
+- Be patient and consistent with your diet.
+- Don't give up if you don't see results immediately.
+- Celebrate your successes and learn from your mistakes.
 
 
-2024-09-25 22:16:12,296 - INFO - 192.168.23.104 - - [25/Sep/2024 22:16:12] "POST /submit HTTP/1.1" 200 -
+2024-09-27 21:30:30,660 - INFO - 192.168.23.104 - - [27/Sep/2024 21:30:30] "POST /submit HTTP/1.1" 200 -
+2024-09-28 22:05:30,297 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5005
+ * Running on http://192.168.23.10:5005
+2024-09-28 22:05:30,300 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:05:37,987 - INFO - rendering index.html
+2024-09-28 22:05:38,013 - INFO - 192.168.23.101 - - [28/Sep/2024 22:05:38] "GET / HTTP/1.1" 200 -
+2024-09-28 22:05:38,506 - INFO - 192.168.23.101 - - [28/Sep/2024 22:05:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-28 22:06:18,794 - INFO - starting submit
+2024-09-28 22:06:22,606 - INFO - Received data: function=aivideo, operationtype=wisdom, url=https://youtu.be/vIXfYFB7aBI?si=kS_yru2BywmSlpTE, debug=False
+2024-09-28 22:06:31,016 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'https://youtu.be/vIXfYFB7aBI?si=kS_yru2BywmSlpTE', 'debug': False}
+2024-09-28 22:06:48,988 - ERROR - Error connecting to API: HTTPConnectionPool(host='localhost', port=5006): Max retries exceeded with url: /get_ai_insights (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffa351e6b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-28 22:06:50,147 - INFO - 192.168.23.101 - - [28/Sep/2024 22:06:50] "[35m[1mPOST /submit HTTP/1.1[0m" 500 -
+2024-09-28 22:07:24,006 - INFO - starting submit
+2024-09-28 22:07:28,626 - INFO - Received data: function=aivideo, operationtype=wisdom, url=https://youtu.be/vIXfYFB7aBI?si=kS_yru2BywmSlpTE, debug=False
+2024-09-28 22:07:36,239 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'https://youtu.be/vIXfYFB7aBI?si=kS_yru2BywmSlpTE', 'debug': False}
+2024-09-28 22:19:26,661 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5005
+ * Running on http://192.168.23.10:5005
+2024-09-28 22:19:26,664 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:19:38,232 - INFO - rendering index.html
+2024-09-28 22:19:38,275 - INFO - 192.168.23.101 - - [28/Sep/2024 22:19:38] "GET / HTTP/1.1" 200 -
+2024-09-28 22:19:52,406 - INFO - starting submit
+2024-09-28 22:19:57,788 - INFO - Received data: function=aivideo, operationtype=wisdom, url=https://youtu.be/vIXfYFB7aBI, debug=False
+2024-09-28 22:20:06,147 - INFO - Sending payload to API: {'function': 'aivideo', 'operationtype': 'wisdom', 'url': 'https://youtu.be/vIXfYFB7aBI', 'debug': False}

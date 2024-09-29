@@ -1,11 +1,13 @@
+
 import logging
 from flask import Flask, request, jsonify
+
 
 #import common variables, classes
 from fabai_common import *
 
 #code to get static text file and returns as stub for testing purposes
-from fabai_get_static_debug_data import *
+from common.fabai_get_static_debug_data import *
 
 #code to download and clean up html and return clean text
 from fabai_get_webpage_as_text import *
@@ -44,7 +46,7 @@ def get_AI_Insights():
     #If Debugging is on, return static content   
     if DEBUGGING:
         app.logger.info(f"Returning static data")
-        return jsonify({"output": get_static_debug_data()})
+        return jsonify({"output": get_static_debug_data(DEBUG_STATIC_VIDEO_FILE)})
         
     #if content type is video, get the youtube transcript and then pass it to fabric
     if function == 'aivideo':
