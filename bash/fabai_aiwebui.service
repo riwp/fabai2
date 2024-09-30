@@ -8,7 +8,7 @@ WorkingDirectory=%h/fabai
 StandardOutput=journal
 StandardError=journal
 Restart=always
-User=[Replace with User to run under]
+User=cmollo
 
 [Install]
 WantedBy=multi-user.target

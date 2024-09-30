@@ -28,4 +28,7 @@ done
 echo "Reloading systemd daemon..."
 sudo systemctl daemon-reload
 
-echo "Done."
+echo "Done. Now modify user configured in service files commands below:"
+
+echo "sudo nano fabai_aiwebui.service"
+echo "sudo nano fabai_get_ai_insights.service"
