@@ -3,8 +3,8 @@ Description=Web UI API for Fabric AI
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /home/cmollo/fabai/aiwebui/aiwebui.py
-WorkingDirectory=/home/cmollo/fabai
+ExecStart=/usr/bin/python3 %h/fabai/api/fabai_aiwebui.service
+WorkingDirectory=%h/fabai
 StandardOutput=journal
 StandardError=journal
 Restart=always
