@@ -1,24 +1,24 @@
 from flask import Flask, render_template, request, jsonify
 import requests
 import logging
-import os
-import sys
+import os, sys
 
 # Add the parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import common.fabai_common_variables
 
-# Code to get static text file and returns as stub for testing purposes
+
+#code to get static text file and returns as stub for testing purposes
 from common.fabai_get_static_debug_data import *
 
-# For UI troubleshooting. Return static response as if you called fabric AI
+#for UI troubleshooting.  Return static response as if you called fabric ai
 DEBUG_STATIC_FABRIC_RESPONSE = common.fabai_common_variables.DEBUG_STATIC_FABRIC_RESPONSE_VALUE
 
 # Get the current directory
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
-# Location for static content when in debug mode to avoid hitting AI server
+#location for static content when in debug mode to avoid hitting AI server
 DEBUG_STATIC_FABRIC_FILE = os.path.join(current_directory, '..', 'static', 'fabai_fabric_static_response_to_webui_for_test.txt')
 
 # Allow toggle on/off debugging from IDE
@@ -36,6 +36,9 @@ AIWEBUI_PORT_NUMBER = 5005
 
 app = Flask(__name__)
 
+# Get the current directory
+current_directory = os.path.dirname(os.path.abspath(__file__))
+
 # Set the log path to go up one directory and then to the log folder
 LOG_PATH = os.path.join(current_directory, 'fabai_webui.log')
 
@@ -51,11 +54,11 @@ FABRIC_AI_API_URL = "http://localhost:5006/get_ai_insights"
 
 @app.route('/')
 def index():
-    app.logger.info("Rendering index.html")
+    app.logger.info(f"rendering index.html")
     return render_template('index.html')
 
 
-def validate_request(function, operationtype, url, text_input, filename):
+def validate_request(function, operationtype, url, text_input):
     errors = []
 
     # Validate text input if function is "textInput"
@@ -68,50 +71,46 @@ def validate_request(function, operationtype, url, text_input, filename):
         if not url or not url.strip():
             errors.append("URL is required when 'AIWeb' or 'AIVideo' is selected.")
 
-    # Validate filename if 'textInput' is selected
-    if function == 'textInput' and filename:
-        if not filename.strip():
-            errors.append("File name is required when 'Text Input' is selected.")
-
     # Return the list of errors if validation fails, or None if validation passes
     if errors:
         return errors
 
-    return None
+    return None 
 
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    app.logger.info("Starting submit")
+    
+    app.logger.info(f"starting submit")
     # Get form data
     data = request.json
     function = data.get('function')
     operationtype = data.get('operationtype', 'wisdom')
     url = data.get('url')
-    text_input = data.get('textInput', "")
-    filename = data.get('filename', "")  # Get filename from the request
+    text_input = data.get('textInput',"")
 
-    app.logger.info(f"Received data: function={function}, operationtype={operationtype}, url={url}, text_input={text_input}, filename={filename}")
+    app.logger.info(f"DEBUG_CODE_VALUE={common.fabai_common_variables.DEBUG_CODE_VALUE}, DEBUG_STATIC_FABRIC_RESPONSE_VALUE={common.fabai_common_variables.DEBUG_STATIC_FABRIC_RESPONSE_VALUE}, DEBUG_STATIC_YOUTUBE_RESPONSE_VALUE={common.fabai_common_variables.DEBUG_STATIC_YOUTUBE_RESPONSE_VALUE}")
+    app.logger.info(f"Received data: function={function}, operationtype={operationtype}, url={url}, text_input={text_input}")
 
     try:
         if DEBUG_STATIC_FABRIC_RESPONSE:
             output_data = get_static_debug_data(DEBUG_STATIC_FABRIC_FILE)
             app.logger.info(f"Using Fabric Static data {DEBUG_STATIC_FABRIC_FILE}")
         else:
+
             # Validate the request
-            validation_errors = validate_request(function, operationtype, url, text_input, filename)
+            validation_errors = validate_request(function, operationtype, url, text_input)
 
             # If validation fails, return the error response
             if validation_errors:
-                app.logger.info("Stopping user. Failed validation.")
+                app.logger.info(f"Stopping user.  Failed validation.")
                 return jsonify({'error': 'Validation failed', 'messages': validation_errors}), 400
             
             payload = {
                 'function': function,
                 'operationtype': operationtype,
                 'url': url,
-                'text_input': text_input,
-                'filename': filename  # Include filename in the payload
+                'text_input': text_input
             }
 
             app.logger.info(f"Sending payload to API: {payload}")    

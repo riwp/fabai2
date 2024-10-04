@@ -1,7 +1,7 @@
 import logging
 import subprocess
 from flask import Flask, request, jsonify
-from fabai_common import *  # Importing custom modules or configurations
+from api.fabai_common import *  # Importing custom modules or configurations
 
 app = Flask(__name__)
 

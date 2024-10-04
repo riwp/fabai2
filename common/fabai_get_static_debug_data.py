@@ -1,6 +1,10 @@
-import logging
+import logging, sys, os
 from flask import Flask, request, jsonify
-from fabai_common import *
+
+# Add the parent directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+#from api.fabai_common import *
 
 app = Flask(__name__)
 

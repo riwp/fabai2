@@ -146,8 +146,6 @@
                 if (valid) {
                     const formData = new FormData(this);
                     submitBtn.textContent = 'Working on it...';  // Change button text
-                    submitBtn.disabled = true;  // Disable the button
-
                     fetch('/submit', {
                         method: 'POST',
                         body: JSON.stringify(Object.fromEntries(formData)),
@@ -159,7 +157,6 @@
                         document.getElementById('result').innerHTML = result.output || result.error || 'An error occurred.';
                     }).finally(() => {
                         submitBtn.textContent = "Let's Go";  // Change button text back
-                        submitBtn.disabled = false;  // Re-enable the button
                     });
                 }
             };

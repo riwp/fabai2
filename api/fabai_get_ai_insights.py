@@ -1,10 +1,12 @@
-
-import logging
+import logging, sys, os
 from flask import Flask, request, jsonify
+import random
 
+# Add the parent directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 #import common variables, classes
-from fabai_common import *
+from api.fabai_common import *
 
 #code to get static text file and returns as stub for testing purposes
 from common.fabai_get_static_debug_data import *
@@ -24,9 +26,15 @@ app = Flask(__name__)
 # Setup logging using the built-in logging module
 logging.basicConfig(level=logging.INFO)
 
+def generate_random_unique_number(start, end):
+    return random.randint(start, end)
+
 #primary entry point into application called by web ui
 @app.route('/get_ai_insights', methods=['POST'])
 def get_AI_Insights():
+
+    app.logger.info(f"DEBUG_CODE_VALUE={common.fabai_common_variables.DEBUG_CODE_VALUE}, DEBUG_STATIC_FABRIC_RESPONSE_VALUE={common.fabai_common_variables.DEBUG_STATIC_FABRIC_RESPONSE_VALUE}, DEBUG_STATIC_YOUTUBE_RESPONSE_VALUE={common.fabai_common_variables.DEBUG_STATIC_YOUTUBE_RESPONSE_VALUE}")
+
     data = request.json
     
     #used to determine whether to get web or video or other source content
@@ -38,13 +46,14 @@ def get_AI_Insights():
     #the target url to get the content
     url = data.get('url')
     
-    #when true, returns static content. when false downloads data from internet
-    DEBUGGING = data.get('debug', False)
+    text_input = data.get('text_input')
     
-    app.logger.info(f"Received request: function={function}, operation_type={operation_type}, url={url}, DEBUGGING={DEBUGGING}")
+    filename = data.get('filename')
+       
+    app.logger.info(f"Received request: function={function}, operation_type={operation_type}, url={url}, text_input={text_input}")
 
     #If Debugging is on, return static content   
-    if DEBUGGING:
+    if common.fabai_common_variables.DEBUG_STATIC_YOUTUBE_RESPONSE_VALUE:
         app.logger.info(f"Returning static data")
         return jsonify({"output": get_static_debug_data(DEBUG_STATIC_VIDEO_FILE)})
         
@@ -65,6 +74,18 @@ def get_AI_Insights():
         
         #return json
         return jsonify({"output": fabric_response})
+    
+        #if content type is web, get the web html, clean it up, and then pass it to fabric
+    elif function == 'textInput':
+        app.logger.info(f"calling fabric with text {text_input}")
+        
+        unique_number = generate_random_unique_number(1000, 9999)  # Generates a random number between 1000 and 9999
+        file_name = filename + str(unique_number)
+        fabric_response = get_fabric_insights_from_text(function, operation_type, file_name, text_input)
+        
+        #return json
+        return jsonify({"output": fabric_response})
+    
     #otherwise, not a valid type
     else:
         return jsonify({"error": "Invalid function. Supported values: 'aiweb', 'aivideo'."}), 400

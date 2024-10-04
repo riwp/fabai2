@@ -2,7 +2,7 @@ import logging
 import os  # Ensure os is imported
 import subprocess
 from flask import Flask, request, jsonify
-from fabai_common import *  # Importing custom modules or configurations
+from api.fabai_common import *  # Importing custom modules or configurations
 
 app = Flask(__name__)
 
@@ -49,6 +49,11 @@ def get_fabric_insights_from_text(function, operation_type, base_filename, text_
     #add web to the name if video
     elif function == 'aiweb':  # Change `function` to `function`
         output_file_name = os.path.join(OUTPUT_DIR_WEB, f"video_{operation_type}_{filename_without_extension}.txt")
+    
+    #add web to the name if video
+    elif function == 'textInput':  
+        output_file_name = os.path.join(OUTPUT_DIR_TEXT, f"text_{operation_type}_{filename_without_extension}.txt")
+
     else:
         return jsonify({"error": f"invalid function {function}"}), 500
    

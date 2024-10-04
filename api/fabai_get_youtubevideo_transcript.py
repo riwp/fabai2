@@ -1,7 +1,7 @@
 import logging
 import os
 from flask import Flask, request, jsonify
-from fabai_common import *  # Ensure this module contains the necessary definitions
+from api.fabai_common import *  # Ensure this module contains the necessary definitions
 
 app = Flask(__name__)
 

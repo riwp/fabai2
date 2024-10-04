@@ -1,0 +1,80 @@
+# SUMMARY
+
+Brett Kagan, Chief Scientific Officer at Cortical Labs, discusses his work developing synthetic biological intelligence.
+
+# IDEAS
+
+- Biologists are exploring putting technology into biology.
+- Introducing biology to technology results in synthetic biological intelligence.
+- Synthetic biological intelligence is also known as SBI.
+- Scientists are growing brain cells in a dish to make an intelligent device.
+- They use an induced pluripotent stem cell that can be made from adult donors.
+- Neurons grow on extracellular matrices above multi-electrode arrays.
+- The arrays record electrical pulses of active brain cells.
+- Electricity is the form of information transfer in the arrays.
+- Scientists are not trying to duplicate a brain in hardware.
+- They are leveraging the cells themselves as part of the hardware.
+- The neurons spontaneously network up and talk to each other.
+- Scientists provide structure in the form of electrical signals.
+- The neurons reorganize their function rapidly in response to the structure.
+- Our brains do the same thing as the neurons in the dish.
+- SBI systems have better learning rates than machine learning.
+
+# INSIGHTS
+
+- SBI could be the future of computing by leveraging the power of biology.
+- Biological intelligence has the potential to outperform silicon-based computing.
+- SBI could have a huge impact on healthcare, drug testing, and disease research.
+- The ethical considerations of SBI need to be carefully considered.
+- Consciousness may emerge from SBI, forcing us to reconsider our relationship with nature.
+- The pursuit of understanding the unknown is the ultimate driver of scientific progress.
+
+# QUOTES
+
+- "What if we introduce the biology to the technology?"
+- "The celles themselves part of the problem is we can't duplicate brain cells in Hardware."
+- "Maybe brain cells are better at interpreting signals from brain cells."
+- "You don't need to look at too many tigers to learn what run from the tiger right."
+- "We're kind of like to think of s as like anti-hype scientists so we wanted to show people like look here's this work it's covered in warts it's messy it's janky but it seems to be doing something so wanted to share it with people."
+- "It wouldn't just change how we treat these things in a dish it would change how we interact with all of nature you know we at things that are still more simple than a cockroach at the moment for now for now but there's so much complexity there it could just it could inform not you know not just the ethics of This research area or this this application this technology but how we interact with the well and I think that's exciting."
+- "If we could that's only 800 to a million 800,000 to a million I should say neurons inside a b and they can achieve so much what if we could just harness that level of intelligence it would outperform any machine learning based drone we have."
+
+# HABITS
+
+- Brett Kagan has a PhD in neuroscience.
+- He works with bioethicists to ensure ethical research practices.
+- He values multidisciplinary collaboration in his research.
+- He believes in being humble and open to the unknown as a scientist.
+- He is driven by a desire to understand the unknown and optimize processes.
+- He wants to make a positive impact on the world through his work.
+
+# FACTS
+
+- Elon Musk and Neuralink are putting technology into biology.
+- Neurons display a complexity that can't be achieved with current hardware.
+- Animals learn quickly with a fraction of the power consumption of machine learning.
+- There is a statistical barrier between our bodies and the external world.
+- There is a phenomenon called blindsight where people are legally blind but can still react to visual stimuli.
+- Tens of billions of dollars are spent each year on neuroclinical trials.
+- Only 7-8% (and as low as 1%) of neuroclinical trials for psychiatric and neurological diseases are successful.
+- The telephone used to be a large, immobile box.
+- Elephants often die of starvation because they grind their teeth down.
+- Bumblebees have 800,000 to 1 million neurons in their brains.
+- An entire episode of Cosmos was devoted to bees.
+
+# REFERENCES
+
+- Neuralink
+- Elon Musk
+- Pong
+- DeepMind
+- University College London
+- Professor Karl Friston
+- Free Energy Principle
+- Cosmos
+- Men in Black
+
+# ONE-SENTENCE TAKEAWAY
+
+Synthetic biological intelligence could revolutionize computing and our understanding of consciousness. 
+
