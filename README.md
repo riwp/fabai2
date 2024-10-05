@@ -97,12 +97,12 @@ Open Web Application
 Operation Type
 --------------------------------------------
 
-Summary:  Summarizes text
-Claims:  Analyzes claims
-Keynote: creates a keynote
-MSummary: Creates a mini summary
-Essay: Creates essay
-Wisdom: My favorite and default!  Analyzes and provides Summary, Ideas, Insights, Quotes, Habits, Facts, References, Recommendations
+- Summary:  Summarizes text
+- Claims:  Analyzes claims
+- Keynote: creates a keynote
+- MSummary: Creates a mini summary
+- Essay: Creates essay
+- Wisdom: My favorite and default!  Analyzes and provides Summary, Ideas, Insights, Quotes, Habits, Facts, References, Recommendations
 
 
 --------------------------------------------
