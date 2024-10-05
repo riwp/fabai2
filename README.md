@@ -156,4 +156,8 @@ BASH Scripts
 - remove_services.sh un-installs services and removes files
 - add_services.sh copies .service files and sets up service (note: home directory and user need to be set in .service files)
 - get_status.sh provides status to check if services are healthy
+<<<<<<< HEAD
 - restart_services.sh reloads and re-starts services
+=======
+- restart_services.sh reloads and re-starts services
+>>>>>>> 4f167840e6fa53566c733eb3241ebb9ce561d704
