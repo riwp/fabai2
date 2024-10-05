@@ -117,10 +117,23 @@ AI Video: goes to youtube, gets transcript, and runs fabric AI
 - Enter URL to Youtube video
 - Click Let's Go
 
-
 AI Web: goes to web site, downloads html, cleans up, and runs fabric AI
 - Enter URL to web page to analyze
 - Click Let's Go
+  
+--------------------------------------------
+Key locations and configurations:
+--------------------------------------------
+
+- Web UI Log: aiwebui/fabai_webui.log
+- API Log: fabai_api.log
+- out/text: stores the AI output of text
+- out/video: stores AI output for downloaded videos
+- ai/web: stores the AI output for downloaded web pages
+- common/fabai_common_variables.py contains variables common across aiwebui and api
+- common/fabai_get_static_debug_data.py reads file system for a file and returns text, used for debugging purposes without hitting server (ie test web or other apis)
+
+
 
 
 
