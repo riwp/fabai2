@@ -158,5 +158,4 @@ BASH Scripts
 - get_status.sh provides status to check if services are healthy
 - clean_out_dirs.sh cleans output directory contents
 - restart_services.sh reloads and re-starts services
-=======
 - restart_services.sh reloads and re-starts services
