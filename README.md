@@ -148,3 +148,13 @@ APIs: run on port 5006 (change API_PORT_NUMBER in fabai_common.py)
 - api/fabai_get_webpage_as_text.py downloads html from web, cleans up, and returns text
 - api/fabai_get_youtubevideo_transcript.py downloads youtube transcript, and returns text
 
+--------------------------------------------
+BASH Scripts
+--------------------------------------------
+- fabai_aiwebui.service service configuration file copied to /etc/systemd/system/
+- fabai_get_ai_insights.service configuration file copied to /etc/systemd/system/
+- remove_services.sh un-installs services and removes files
+- add_services.sh copies .service files and sets up service (note: home directory and user need to be set in .service files)
+- get_status.sh provides status to check if services are healthy
+- restart_services.sh reloads and re-starts services
+- 
