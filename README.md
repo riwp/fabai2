@@ -89,11 +89,7 @@ Open Web Application
 11. Go to Web Application aiwebui on port 5000
     Open a browser and go to URL:  http://[Server Name]:5005/
 
-
---------------------------------------------
-Screen Shots of UI
---------------------------------------------
-
+    You should see something like below:
 ![image](https://github.com/user-attachments/assets/b856a4cf-d24d-4422-b68a-61616f0ceee2)
 
 
