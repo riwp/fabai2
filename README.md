@@ -133,7 +133,18 @@ Key locations and configurations:
 - common/fabai_common_variables.py contains variables common across aiwebui and api
 - common/fabai_get_static_debug_data.py reads file system for a file and returns text, used for debugging purposes without hitting server (ie test web or other apis)
 
+--------------------------------------------
+Web UI:
+--------------------------------------------
+- aiwebui/aiewbui.py main server side code index.html posts to.  calls fabai_get_ai_insights.py as orchestration layer
+- aiwebui/templates/index.html contains the html, javascript for the UI which posts data to  aiwebui/aiewbui.py
 
-
-
+--------------------------------------------
+APIs:
+--------------------------------------------
+- api/fabai_common.py common code imported across all apis
+- api/fabai_get_ai_insights.py main entry point from web ui and orchestrates calls based upon web ui function selected
+- api/fabai_get_fabric_insights_from_text.py takes in text, calls fabric with --pattern and returns AI output
+- api/fabai_get_webpage_as_text.py downloads html from web, cleans up, and returns text
+- api/fabai_get_youtubevideo_transcript.py downloads youtube transcript, and returns text
 
