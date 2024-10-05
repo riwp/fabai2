@@ -59,6 +59,17 @@
         <h1 class="text-center">What can Fabric AI help you do today?</h1>
         <form id="apiForm">
             <div class="form-group">
+                <label for="operationtype">Operation Type</label>
+                <select class="form-control" id="operationtype" name="operationtype" required>
+                    <option value="claims">Claims</option>
+                    <option value="keynote">Keynote</option>
+                    <option value="msummary">MSummary</option>
+                    <option value="summary">Summary</option>
+                    <option value="essay">Essay</option>
+                    <option value="wisdom" selected>wisdom</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <label for="function">Function</label>
                 <select class="form-control" id="function" name="function" required>
                     <option value="textInput">Text Input</option>
@@ -66,7 +77,6 @@
                     <option value="aiweb">AIWeb</option>
                 </select>
             </div>
-
             <div class="form-group" id="textInputGroup" style="display: none;">
                 <label for="textInput">Text Input</label>
                 <textarea class="form-control" id="textInput" name="textInput" placeholder="Enter your text"></textarea>
@@ -97,6 +107,7 @@
             const textInputError = document.getElementById('textInputError');
             const urlError = document.getElementById('urlError');
             const submitBtn = document.getElementById('submitBtn');
+            const resultDiv = document.getElementById('result');
 
             function toggleInputs() {
                 const selectedFunction = functionSelect.value;
@@ -121,6 +132,9 @@
             document.getElementById('apiForm').onsubmit = function (e) {
                 e.preventDefault();
                 let valid = true;
+
+                // Clear the result div on submit
+                resultDiv.innerHTML = '';
 
                 // Validate text input if function is textInput
                 if (functionSelect.value === 'textInput') {
@@ -156,7 +170,7 @@
                         }
                     }).then(response => response.json()).then(result => {
                         // Handle result
-                        document.getElementById('result').innerHTML = result.output || result.error || 'An error occurred.';
+                        resultDiv.innerHTML = result.output || result.error || 'An error occurred.';
                     }).finally(() => {
                         submitBtn.textContent = "Let's Go";  // Change button text back
                         submitBtn.disabled = false;  // Re-enable the button
