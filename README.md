@@ -157,4 +157,3 @@ BASH Scripts
 - add_services.sh copies .service files and sets up service (note: home directory and user need to be set in .service files)
 - get_status.sh provides status to check if services are healthy
 - restart_services.sh reloads and re-starts services
-- 
