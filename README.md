@@ -89,6 +89,19 @@ Open Web Application
 11. Go to Web Application aiwebui on port 5000
     Open a browser and go to URL:  http://[Server Name]:5005/
 
+
+--------------------------------------------
+Operation Type
+--------------------------------------------
+
+Summary:  Summarizes text
+Claims:  Analyzes claims
+Keynote: creates a keynote
+MSummary: Creates a mini summary
+Essay: Creates essay
+Wisdom: My favorite and default!  Analyzes and provides Summary, Ideas, Insights, Quotes, Habits, Facts, References, Recommendations
+
+
 --------------------------------------------
 Web UI Functions
 --------------------------------------------
@@ -105,7 +118,5 @@ AI Web: goes to web site, downloads html, cleans up, and runs fabric AI
 - Enter URL to web page to analyze
 - Click Let's Go
 
---------------------------------------------
-Web UI Functions
---------------------------------------------
+
 
