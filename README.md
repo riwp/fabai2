@@ -134,13 +134,13 @@ Key locations and configurations:
 - common/fabai_get_static_debug_data.py reads file system for a file and returns text, used for debugging purposes without hitting server (ie test web or other apis)
 
 --------------------------------------------
-Web UI:
+Web UI: run on port 5005 (change AIWEBUI_PORT_NUMBER in aiwebui.py)
 --------------------------------------------
 - aiwebui/aiewbui.py main server side code index.html posts to.  calls fabai_get_ai_insights.py as orchestration layer
 - aiwebui/templates/index.html contains the html, javascript for the UI which posts data to  aiwebui/aiewbui.py
 
 --------------------------------------------
-APIs:
+APIs: run on port 5006 (change API_PORT_NUMBER in fabai_common.py)
 --------------------------------------------
 - api/fabai_common.py common code imported across all apis
 - api/fabai_get_ai_insights.py main entry point from web ui and orchestrates calls based upon web ui function selected
