@@ -91,6 +91,13 @@ Open Web Application
 
 
 --------------------------------------------
+Screen Shots of UI
+--------------------------------------------
+
+![image](https://github.com/user-attachments/assets/b856a4cf-d24d-4422-b68a-61616f0ceee2)
+
+
+--------------------------------------------
 Operation Type
 --------------------------------------------
 
@@ -113,6 +120,7 @@ Text Input: allows you to copy paste text and runs fabric AI
 AI Video: goes to youtube, gets transcript, and runs fabric AI
 - Enter URL to Youtube video
 - Click Let's Go
+
 
 AI Web: goes to web site, downloads html, cleans up, and runs fabric AI
 - Enter URL to web page to analyze
