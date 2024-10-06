@@ -1,4 +1,13 @@
 
+
+fabai2 
+- extends fabai to make into a progressive web app that can be installed on phone
+- adds support for https
+- adds entry point for content to be posted directly to PWA
+- Testing integration with iphone still in progress PWA works, still some things to work out with safari share to PWA
+- Have not tested android
+
+
 --------------------------------------------
 Install pre-requisites
 --------------------------------------------
