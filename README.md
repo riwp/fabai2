@@ -27,7 +27,7 @@ For Progressive Web APP install (PWA)
 - you should see icon as an app now on home screen that opens up
 
 -----------------------
-Add browse, retrieve, delete
+Python: Add browse, retrieve, delete
 -----------------------
 
 # Capabilities:
@@ -108,3 +108,148 @@ if __name__ == '__main__':
     app.run()
 
 
+-----------------------
+Web UI: Add browse, retrieve, delete
+-----------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Browser</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .file-list {
+            margin-bottom: 20px;
+        }
+        .file-item {
+            margin-bottom: 10px;
+        }
+        .description {
+            font-style: italic;
+            color: gray;
+        }
+        .file-content {
+            white-space: pre-wrap;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        .file-actions {
+            margin-top: 10px;
+        }
+        button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>File Browser</h1>
+
+    <div class="file-list">
+        <h2>Files</h2>
+        <div id="file-list-container"></div>
+    </div>
+
+    <div id="file-details" style="display: none;">
+        <h2>File: <span id="file-name"></span></h2>
+        <p id="file-description" class="description"></p>
+
+        <textarea id="file-content" class="file-content" rows="10" cols="80" readonly></textarea>
+
+        <div class="file-actions">
+            <h3>Update Description:</h3>
+            <input type="text" id="new-description" placeholder="Enter new description" />
+            <button id="save-description">Save Description</button>
+            <button id="delete-file">Delete File</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Load file list on page load
+            loadFileList();
+
+            function loadFileList() {
+                $.get("/files", function(data) {
+                    $('#file-list-container').empty();
+                    data.forEach(function(file) {
+                        $('#file-list-container').append(
+                            '<div class="file-item">' +
+                            '<a href="#" class="file-link" data-filename="' + file.filename + '">' + file.filename + '</a>' +
+                            ' <span class="description">(' + file.description + ')</span>' +
+                            '</div>'
+                        );
+                    });
+
+                    // Attach click handlers to file links
+                    $('.file-link').click(function(e) {
+                        e.preventDefault();
+                        let filename = $(this).data('filename');
+                        loadFileDetails(filename);
+                    });
+                });
+            }
+
+            function loadFileDetails(filename) {
+                $('#file-details').show();
+                $('#file-name').text(filename);
+                $('#file-content').val('');
+
+                // Get file description and content
+                $.get("/files/" + filename, function(data) {
+                    $('#file-content').val(data.content);
+                    $('#file-description').text(data.description ? data.description : "No description available");
+                });
+
+                // Save description button click
+                $('#save-description').off('click').on('click', function() {
+                    let newDescription = $('#new-description').val();
+                    if (newDescription) {
+                        $.ajax({
+                            url: "/files/" + filename + "/description",
+                            type: "POST",
+                            contentType: "application/json",
+                            data: JSON.stringify({ description: newDescription }),
+                            success: function() {
+                                alert("Description updated");
+                                loadFileList();  // Refresh the file list to show updated description
+                                $('#file-description').text(newDescription);
+                                $('#new-description').val('');  // Clear input field
+                            },
+                            error: function() {
+                                alert("Error updating description");
+                            }
+                        });
+                    } else {
+                        alert("Please enter a description");
+                    }
+                });
+
+                // Delete file button click
+                $('#delete-file').off('click').on('click', function() {
+                    if (confirm("Are you sure you want to delete this file?")) {
+                        $.ajax({
+                            url: "/files/" + filename,
+                            type: "DELETE",
+                            success: function() {
+                                alert("File deleted");
+                                loadFileList();
+                                $('#file-details').hide();  // Hide details after deleting the file
+                            },
+                            error: function() {
+                                alert("Error deleting file");
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
