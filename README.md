@@ -30,14 +30,40 @@ For Progressive Web APP install (PWA)
 Python: Add browse, retrieve, delete
 -----------------------
 
-# Capabilities:
+Key Features of the Back-End Code:
 
-	1.	File List: When the /files endpoint is called, the list of files in the directory is retrieved. For each file, its description (if any) is fetched from the JSON metadata file and displayed in the response.
-	2.	Add/Update Descriptions: The /files/<filename>/description endpoint allows users to add or update descriptions. The description is stored in the file_metadata.json file with the filename as the key.
-	3.	JSON Storage: The descriptions are stored in a simple JSON file (file_metadata.json). If a file already has a description, it will be updated; otherwise, a new description is added.
-	4.	Graceful Error Handling: The app handles missing files (returning a 404 if a file doesn’t exist) and missing descriptions (400 if the user tries to submit without providing a description).
+	1.	List Files (/files):
+	•	Retrieves the list of files from the BASE_DIR directory.
+	•	For each file, it fetches the corresponding description from the file_metadata.json file, or displays a default “No description available” message if no description is found.
+	2.	Get File Content and Description (/files/<filename>):
+	•	Fetches the content of a specific file and its description from the file_metadata.json file.
+	•	If the file doesn’t exist, it returns a 404 error.
+	3.	Add/Update File Description (/files/<filename>/description):
+	•	Allows users to add or update a description for a specific file by sending a POST request.
+	•	The description is stored in the file_metadata.json file.
+	•	If the file doesn’t exist in the directory, it returns a 404 error.
+	4.	Delete File (/files/<filename>):
+	•	Deletes the specified file from the filesystem.
+	•	Also removes the file’s metadata (description) from the file_metadata.json file.
+	•	If the file doesn’t exist, it returns a 404 error.
 
-# Main application
+Directory Structure:
+
+Make sure you update the BASE_DIR to point to the directory where your files are stored. The file_metadata.json file will be created in the same directory as the Flask app unless you specify a different location.
+
+Example of file_metadata.json File:
+
+{
+    "example.txt": {
+        "description": "This is an example file."
+    },
+    "notes.txt": {
+        "description": "Personal notes on project progress."
+    }
+}
+
+
+
 
 import os
 import json
@@ -45,7 +71,8 @@ from flask import Flask, jsonify, request, abort
 
 app = Flask(__name__)
 
-BASE_DIR = '/path/to/your/files/'
+# Define the directory where your files are stored and the JSON file for metadata
+BASE_DIR = '/path/to/your/files/'  # Update this with your actual file directory
 JSON_FILE = 'file_metadata.json'
 
 # Helper function to load the metadata from the JSON file
@@ -71,8 +98,8 @@ def update_file_description(filename, description):
     metadata[filename] = {'description': description}
     save_metadata(metadata)
 
-# List files along with their descriptions
-@app.route('/files')
+# List all files in the directory along with their descriptions
+@app.route('/files', methods=['GET'])
 def list_files():
     files = [f for f in os.listdir(BASE_DIR) if os.path.isfile(os.path.join(BASE_DIR, f))]
     file_list = []
@@ -86,16 +113,36 @@ def list_files():
     
     return jsonify(file_list)
 
+# Get file content and description for a specific file
+@app.route('/files/<filename>', methods=['GET'])
+def get_file_content(filename):
+    file_path = os.path.join(BASE_DIR, filename)
+    if not os.path.isfile(file_path):
+        abort(404, "File not found")
+
+    # Read file content
+    with open(file_path, 'r') as file:
+        content = file.read()
+
+    # Get file description from JSON metadata
+    description = get_file_description(filename)
+
+    return jsonify({
+        'content': content,
+        'description': description
+    })
+
 # Add or update file description
 @app.route('/files/<filename>/description', methods=['POST'])
 def add_description(filename):
-    if not os.path.isfile(os.path.join(BASE_DIR, filename)):
+    file_path = os.path.join(BASE_DIR, filename)
+    if not os.path.isfile(file_path):
         abort(404, "File not found")
     
-    # Get the description from the request
+    # Get the description from the request body
     data = request.get_json()
     description = data.get('description')
-    
+
     if not description:
         abort(400, "Description is required")
     
@@ -104,8 +151,27 @@ def add_description(filename):
     
     return jsonify({"message": "Description added/updated successfully"}), 200
 
+# Delete a file and remove its metadata
+@app.route('/files/<filename>', methods=['DELETE'])
+def delete_file(filename):
+    file_path = os.path.join(BASE_DIR, filename)
+    if not os.path.isfile(file_path):
+        abort(404, "File not found")
+
+    # Remove the file from the filesystem
+    os.remove(file_path)
+    
+    # Optionally remove file description from the metadata JSON
+    metadata = load_metadata()
+    if filename in metadata:
+        del metadata[filename]
+        save_metadata(metadata)
+
+    return jsonify({"message": "File deleted successfully"}), 200
+
 if __name__ == '__main__':
-    app.run()
+    # Initialize Flask app
+    app.run(debug=True)
 
 
 -----------------------
