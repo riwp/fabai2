@@ -30,12 +30,14 @@ For Progressive Web APP install (PWA)
 Add browse, retrieve, delete
 -----------------------
 
-Capabilities:
+# Capabilities:
 
 	1.	File List: When the /files endpoint is called, the list of files in the directory is retrieved. For each file, its description (if any) is fetched from the JSON metadata file and displayed in the response.
 	2.	Add/Update Descriptions: The /files/<filename>/description endpoint allows users to add or update descriptions. The description is stored in the file_metadata.json file with the filename as the key.
 	3.	JSON Storage: The descriptions are stored in a simple JSON file (file_metadata.json). If a file already has a description, it will be updated; otherwise, a new description is added.
 	4.	Graceful Error Handling: The app handles missing files (returning a 404 if a file doesn’t exist) and missing descriptions (400 if the user tries to submit without providing a description).
+
+# Main application
 
 import os
 import json
