@@ -1,6 +1,11 @@
 
 
-fabai2 
+FabAI2
+
+-----------------------
+Progressive Web App
+-----------------------
+
 - extends fabai to make into a progressive web app that can be installed on phone
 - adds support for https
 - adds entry point for content to be posted directly to PWA
@@ -21,12 +26,12 @@ For Progressive Web APP install (PWA)
 - use arrow to share, add home screen
 - you should see icon as an app now on home screen that opens up
 
+-----------------------
+Add browse, retrieve, delete
+-----------------------
 
-- Summary:  Summarizes text
-- Claims:  Analyzes claims
-- Keynote: creates a keynote
-- MSummary: Creates a mini summary
-- Essay: Creates essay
-- Wisdom: My favorite and default!  Analyzes and provides Summary, Ideas, Insights, Quotes, Habits, Facts, References, Recommendations
+
+
+
 
 
